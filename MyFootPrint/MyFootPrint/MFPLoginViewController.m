@@ -25,6 +25,7 @@
     
     self.userInfo = [NSMutableDictionary dictionaryWithCapacity:3];
     
+    
     NSLog(@"%@",USER_INFO_STORING_PATH);
         
 }
