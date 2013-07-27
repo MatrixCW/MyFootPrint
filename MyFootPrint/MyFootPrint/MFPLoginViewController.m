@@ -8,7 +8,7 @@
 
 #import "MFPLoginViewController.h"
 #import <BDSocialLogin/BDSocialLoginSDK.h>
-
+#import "MFPQueryGeolocation.h"
 @interface MFPLoginViewController ()
 
 @end
@@ -25,6 +25,7 @@
     
     self.userInfo = [NSMutableDictionary dictionaryWithCapacity:3];
     
+    [MFPQueryGeolocation getGeolocation:CGPointMake(30, 104)];
     NSLog(@"%@",USER_INFO_STORING_PATH);
         
 }
@@ -82,6 +83,7 @@
             }
             
             [self writeToTextFile:self.userInfo];
+            [self goToNextStage];
      
         } else {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"失败" message:[NSString stringWithFormat:@"%@获取信息失败\n error code:%d;\n error message:%@",platformType,error.code,[error localizedDescription]] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
@@ -211,6 +213,10 @@
     }
      
     
+}
+
+-(void)goToNextStage{
+    [self performSegueWithIdentifier:SEGUE_FROM_LOGIN_TO_UPLOADING sender:self];
 }
 
 -(void)clear{
