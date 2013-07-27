@@ -169,7 +169,20 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"haha");
+    self.currentProcessingIndex = indexPath.row;
+    [self performSegueWithIdentifier:@"SEGUE_TO_SHOW_PHOTOS" sender:self];
 }
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    if([segue.identifier isEqualToString:@"SEGUE_TO_SHOW_PHOTOS"])
+        if([segue.destinationViewController isKindOfClass:[MFPDisplayImageViewController class]]){
+            MFPDisplayImageViewController* segueVC = (MFPDisplayImageViewController*)segue.destinationViewController;
+            segueVC.myDelegate = self;
+            
+        }
+}
+
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
     // TODO: Deselect item
 }
@@ -238,24 +251,15 @@
 }
 
 
--(void)getChinaProvinces{
+-(NSArray*) imagesToDisplay{
+    
+    NSArray* keys = [self.provincesAndPhotos allKeys];
+    NSString *key = [keys objectAtIndex:self.currentSlectedProvinces];
+    
+    return [NSArray arrayWithArray:[self.provincesAndPhotos objectForKey:key]];
     
 }
 
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
-    
-    UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
-    self.selectedImage.image = chosenImage;
-    
-    [picker dismissViewControllerAnimated:YES completion:NULL];
-    
-}
-
-- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
-    
-    [picker dismissViewControllerAnimated:YES completion:NULL];
-    
-}
 
 - (void)didReceiveMemoryWarning
 {

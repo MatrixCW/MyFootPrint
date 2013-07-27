@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BBDA69817A45EBC0029FC06 /* back_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BBDA69717A45EBC0029FC06 /* back_button.png */; };
+		0BBDA69A17A45F630029FC06 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BBDA69917A45F630029FC06 /* add.png */; };
+		0BBDA6A017A460B70029FC06 /* MFPDisplayImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBDA69F17A460B70029FC06 /* MFPDisplayImageViewController.m */; };
+		0BBDA6A317A475140029FC06 /* MFPDisplayAllImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBDA6A217A475140029FC06 /* MFPDisplayAllImageCell.m */; };
+		0BBDA6A517A475C80029FC06 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BBDA6A417A475C80029FC06 /* check.png */; };
 		0BC4CA7317A3C764003A4AE5 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC4CA7217A3C764003A4AE5 /* AssetsLibrary.framework */; };
 		0BC4CA7517A440B3003A4AE5 /* pushpin.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BC4CA7417A440B3003A4AE5 /* pushpin.png */; };
 		0BC4CA7817A44126003A4AE5 /* MFPImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BC4CA7717A44126003A4AE5 /* MFPImageCell.m */; };
@@ -171,6 +176,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BBDA69717A45EBC0029FC06 /* back_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_button.png; sourceTree = "<group>"; };
+		0BBDA69917A45F630029FC06 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		0BBDA69E17A460B70029FC06 /* MFPDisplayImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPDisplayImageViewController.h; sourceTree = "<group>"; };
+		0BBDA69F17A460B70029FC06 /* MFPDisplayImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPDisplayImageViewController.m; sourceTree = "<group>"; };
+		0BBDA6A117A475140029FC06 /* MFPDisplayAllImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPDisplayAllImageCell.h; sourceTree = "<group>"; };
+		0BBDA6A217A475140029FC06 /* MFPDisplayAllImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPDisplayAllImageCell.m; sourceTree = "<group>"; };
+		0BBDA6A417A475C80029FC06 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
 		0BC4CA7217A3C764003A4AE5 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		0BC4CA7417A440B3003A4AE5 /* pushpin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pushpin.png; sourceTree = "<group>"; };
 		0BC4CA7617A44126003A4AE5 /* MFPImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPImageCell.h; sourceTree = "<group>"; };
@@ -461,6 +473,10 @@
 				0BEA00E517A39D7400061BB6 /* MFPUploadPhotoViewController.m */,
 				4B37E82B17A3C91400C54C85 /* MFPrrLoginWebViewController.h */,
 				4B37E82C17A3C91400C54C85 /* MFPrrLoginWebViewController.m */,
+				0BBDA69E17A460B70029FC06 /* MFPDisplayImageViewController.h */,
+				0BBDA69F17A460B70029FC06 /* MFPDisplayImageViewController.m */,
+				0BBDA6A117A475140029FC06 /* MFPDisplayAllImageCell.h */,
+				0BBDA6A217A475140029FC06 /* MFPDisplayAllImageCell.m */,
 				0BEA010417A3AE8B00061BB6 /* MFPQueryGeolocation.h */,
 				0BEA010517A3AE8B00061BB6 /* MFPQueryGeolocation.m */,
 				0BEA00DC17A3803200061BB6 /* MFPLoginViewController.h */,
@@ -480,6 +496,9 @@
 		0BEA007117A35FD600061BB6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0BBDA6A417A475C80029FC06 /* check.png */,
+				0BBDA69917A45F630029FC06 /* add.png */,
+				0BBDA69717A45EBC0029FC06 /* back_button.png */,
 				0BC4CA7417A440B3003A4AE5 /* pushpin.png */,
 				0BEA00E217A39D4D00061BB6 /* upload_bg.png */,
 				0BEA007217A35FD600061BB6 /* MyFootPrint-Info.plist */,
@@ -912,6 +931,9 @@
 				4B605C8A17A409020047A956 /* 8green.png in Resources */,
 				4B605C8B17A409020047A956 /* 9green.png in Resources */,
 				0BC4CA7517A440B3003A4AE5 /* pushpin.png in Resources */,
+				0BBDA69817A45EBC0029FC06 /* back_button.png in Resources */,
+				0BBDA69A17A45F630029FC06 /* add.png in Resources */,
+				0BBDA6A517A475C80029FC06 /* check.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -981,6 +1003,8 @@
 				4B605CBE17A442240047A956 /* iCarousel.m in Sources */,
 				0BC4CA7817A44126003A4AE5 /* MFPImageCell.m in Sources */,
 				4B6EEC2F17A445D700F17091 /* MFPCardViewController.m in Sources */,
+				0BBDA6A017A460B70029FC06 /* MFPDisplayImageViewController.m in Sources */,
+				0BBDA6A317A475140029FC06 /* MFPDisplayAllImageCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
