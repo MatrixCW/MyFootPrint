@@ -35,7 +35,6 @@
 		0BEA00CD17A3658100061BB6 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA00BE17A3658100061BB6 /* SBJsonStreamWriterAccumulator.m */; };
 		0BEA00CE17A3658100061BB6 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA00C017A3658100061BB6 /* SBJsonStreamWriterState.m */; };
 		0BEA00CF17A3658100061BB6 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA00C217A3658100061BB6 /* SBJsonWriter.m */; };
-		0BEA00D117A365AA00061BB6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA00D017A365AA00061BB6 /* SystemConfiguration.framework */; };
 		0BEA00D317A365AD00061BB6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA00D217A365AD00061BB6 /* QuartzCore.framework */; };
 		0BEA00D517A365BB00061BB6 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA00D417A365BB00061BB6 /* CoreTelephony.framework */; };
 		0BEA00D717A365C700061BB6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA00D617A365C700061BB6 /* libsqlite3.dylib */; };
@@ -56,6 +55,8 @@
 		0BEA010617A3AE8B00061BB6 /* MFPQueryGeolocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA010517A3AE8B00061BB6 /* MFPQueryGeolocation.m */; };
 		0BEA010817A3B1AB00061BB6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA010717A3B1AB00061BB6 /* CFNetwork.framework */; };
 		0BEA010A17A3B1B000061BB6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA010917A3B1B000061BB6 /* Security.framework */; };
+		0BEA010C17A3B82900061BB6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA010B17A3B82900061BB6 /* MobileCoreServices.framework */; };
+		0BEA010D17A3B83100061BB6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA00D017A365AA00061BB6 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +152,7 @@
 		0BEA010517A3AE8B00061BB6 /* MFPQueryGeolocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPQueryGeolocation.m; sourceTree = "<group>"; };
 		0BEA010717A3B1AB00061BB6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		0BEA010917A3B1B000061BB6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0BEA010B17A3B82900061BB6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BEA010D17A3B83100061BB6 /* SystemConfiguration.framework in Frameworks */,
+				0BEA010C17A3B82900061BB6 /* MobileCoreServices.framework in Frameworks */,
 				0BEA010A17A3B1B000061BB6 /* Security.framework in Frameworks */,
 				0BEA010817A3B1AB00061BB6 /* CFNetwork.framework in Frameworks */,
 				0BEA00DB17A365D400061BB6 /* libz.1.2.5.dylib in Frameworks */,
@@ -165,7 +169,6 @@
 				0BEA00D717A365C700061BB6 /* libsqlite3.dylib in Frameworks */,
 				0BEA00D517A365BB00061BB6 /* CoreTelephony.framework in Frameworks */,
 				0BEA00D317A365AD00061BB6 /* QuartzCore.framework in Frameworks */,
-				0BEA00D117A365AA00061BB6 /* SystemConfiguration.framework in Frameworks */,
 				0BEA006B17A35FD600061BB6 /* UIKit.framework in Frameworks */,
 				0BEA006D17A35FD600061BB6 /* Foundation.framework in Frameworks */,
 				0BEA006F17A35FD600061BB6 /* CoreGraphics.framework in Frameworks */,
@@ -190,6 +193,7 @@
 		0BEA005E17A35FD600061BB6 = {
 			isa = PBXGroup;
 			children = (
+				0BEA010B17A3B82900061BB6 /* MobileCoreServices.framework */,
 				0BEA010917A3B1B000061BB6 /* Security.framework */,
 				0BEA010717A3B1AB00061BB6 /* CFNetwork.framework */,
 				0BEA00DA17A365D400061BB6 /* libz.1.2.5.dylib */,

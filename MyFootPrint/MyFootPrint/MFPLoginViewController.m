@@ -26,8 +26,6 @@
     self.userInfo = [NSMutableDictionary dictionaryWithCapacity:3];
     
 
-    [MFPQueryGeolocation getGeolocation:CGPointMake(30, 104)];
-
         
 }
 
