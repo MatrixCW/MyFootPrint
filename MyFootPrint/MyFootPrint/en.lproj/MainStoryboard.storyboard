@@ -12,13 +12,17 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_main.png" translatesAutoresizingMaskIntoConstraints="NO" id="Atq-Nf-M6A">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="480" id="rWP-Xk-Lwe"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTv-QC-sBb">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="44" id="ROQ-wh-RU9"/>
-                                    <constraint firstAttribute="height" constant="44" id="XJo-i5-icm"/>
+                                    <constraint firstAttribute="height" constant="87" id="7uk-fr-xv2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="addthis500.png">
+                                <state key="normal" backgroundImage="home2.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -29,15 +33,74 @@
                                     <action selector="footPrintButtonPressed:" destination="MCW-Kn-huR" eventType="touchUpInside" id="2Gu-kq-JbU"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="header.png" translatesAutoresizingMaskIntoConstraints="NO" id="TGK-Ax-aZi">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="6uN-ta-JaM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="好友位置" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9q-7f-EA6">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="RMx-59-1Jv"/>
+                                    <constraint firstAttribute="width" constant="87" id="VbZ-Ls-J8r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LP2-ik-OLI">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="39" id="2lu-GN-70u"/>
+                                    <constraint firstAttribute="height" constant="26" id="wej-au-dpl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="share.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareButtonPressed:" destination="MCW-Kn-huR" eventType="touchUpInside" id="uuV-zZ-wwW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06i-5K-fFN">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="aGF-ce-bVm"/>
+                                    <constraint firstAttribute="width" constant="45" id="ffR-ma-57D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="camera.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="WTv-QC-sBb" firstAttribute="centerX" secondItem="RnY-IY-aNN" secondAttribute="centerX" type="default" id="18i-t4-NH0"/>
-                            <constraint firstAttribute="bottom" secondItem="WTv-QC-sBb" secondAttribute="bottom" constant="32" id="vdM-Ej-XQA"/>
+                            <constraint firstAttribute="trailing" secondItem="06i-5K-fFN" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="HaV-re-FdK"/>
+                            <constraint firstItem="Atq-Nf-M6A" firstAttribute="leading" secondItem="RnY-IY-aNN" secondAttribute="leading" type="default" id="RBy-O3-lXH"/>
+                            <constraint firstAttribute="trailing" secondItem="LP2-ik-OLI" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="SBB-EQ-kVe"/>
+                            <constraint firstItem="WTv-QC-sBb" firstAttribute="top" secondItem="RnY-IY-aNN" secondAttribute="top" constant="408" id="T9G-v0-SFQ"/>
+                            <constraint firstItem="06i-5K-fFN" firstAttribute="top" secondItem="TGK-Ax-aZi" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="U3U-zr-qUs"/>
+                            <constraint firstItem="WTv-QC-sBb" firstAttribute="leading" secondItem="b9q-7f-EA6" secondAttribute="leading" type="default" id="WXP-bD-2Rz"/>
+                            <constraint firstItem="TGK-Ax-aZi" firstAttribute="trailing" secondItem="RnY-IY-aNN" secondAttribute="trailing" type="default" id="abt-ju-z1A"/>
+                            <constraint firstItem="TGK-Ax-aZi" firstAttribute="leading" secondItem="RnY-IY-aNN" secondAttribute="leading" type="default" id="acC-Pa-Qnl"/>
+                            <constraint firstItem="TGK-Ax-aZi" firstAttribute="top" secondItem="RnY-IY-aNN" secondAttribute="top" type="default" id="bZx-W7-c21"/>
+                            <constraint firstItem="Atq-Nf-M6A" firstAttribute="trailing" secondItem="RnY-IY-aNN" secondAttribute="trailing" type="default" id="hVY-c1-dyH"/>
+                            <constraint firstItem="WTv-QC-sBb" firstAttribute="trailing" secondItem="b9q-7f-EA6" secondAttribute="trailing" type="default" id="hfL-WU-taj"/>
+                            <constraint firstItem="LP2-ik-OLI" firstAttribute="top" secondItem="RnY-IY-aNN" secondAttribute="top" constant="8" id="mHd-dY-39p"/>
+                            <constraint firstItem="Atq-Nf-M6A" firstAttribute="top" secondItem="RnY-IY-aNN" secondAttribute="top" type="default" id="ppF-PL-zHx"/>
+                            <constraint firstItem="TGK-Ax-aZi" firstAttribute="centerX" secondItem="b9q-7f-EA6" secondAttribute="centerX" type="default" id="r2l-N2-noO"/>
+                            <constraint firstItem="LP2-ik-OLI" firstAttribute="bottom" secondItem="b9q-7f-EA6" secondAttribute="bottom" type="default" id="rPa-p5-q8d"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tX1-aP-5nf"/>
                     <connections>
+                        <outlet property="cameraButtonPressed" destination="06i-5K-fFN" id="Qu9-Ku-chS"/>
                         <outlet property="footPrintButton" destination="WTv-QC-sBb" id="zg8-2W-L1S"/>
                         <segue destination="2" kind="modal" identifier="POP_LOGIN_VC" id="3cn-2v-oyn"/>
                     </connections>
@@ -224,10 +287,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="addthis500.png" width="500" height="500"/>
         <image name="bg_intro.png" width="640" height="960"/>
+        <image name="bg_main.png" width="640" height="960"/>
+        <image name="camera.png" width="90" height="60"/>
         <image name="header.png" width="640" height="95"/>
+        <image name="home2.png" width="174" height="174"/>
         <image name="rr_login.png" width="234" height="48"/>
+        <image name="share.png" width="78" height="52"/>
         <image name="wb_login.png" width="234" height="48"/>
     </resources>
     <classes>
@@ -235,6 +301,8 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MFPFootPrintViewController.h"/>
             <relationships>
                 <relationship kind="action" name="footPrintButtonPressed:"/>
+                <relationship kind="action" name="shareButtonPressed:"/>
+                <relationship kind="outlet" name="cameraButtonPressed" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="footPrintButton" candidateClass="UIButton"/>
             </relationships>
         </class>

@@ -9,7 +9,7 @@
 
 #import "ALRadialMenu.h"
 #import <QuartzCore/QuartzCore.h>
-
+#import "MFPConstants.h"
 @implementation ALRadialMenu
 
 
@@ -52,7 +52,7 @@
 	int centerY = frame.origin.y + (frame.size.width/2);
 	CGPoint origin = CGPointMake(centerX, centerY);
 	
-	float buttonSize = 25.0f;
+	float buttonSize = FOOT_PRINT_BUTTON_SIZE;
 	if ([self.delegate respondsToSelector:@selector(buttonSizeForRadialMenu:)]) {
 		buttonSize = [self.delegate buttonSizeForRadialMenu:self];
 	}
@@ -63,10 +63,10 @@
 		float radians = (angle * (currentItem - 1) + start) * (M_PI/180);
 		
 		int x = round (centerX + radius * cos(radians));
-		int y = round (centerY - radius * sin(radians));
+		int y = round (centerY - radius * sin(radians)) - 20;
 		//extra space to have the items bounce back at the end of the "spring"
 		int extraX = round (centerX + (radius*1.07) * cos(radians));
-		int extraY = round (centerY - (radius*1.07) * sin(radians));
+		int extraY = round (centerY - (radius*1.07) * sin(radians)) - 20;
 		
 		//FIXME: make height/width ivars with a delegate to resize
 		CGRect frame = CGRectMake(centerX-buttonSize*0.5f, centerY-buttonSize*0.5f, buttonSize, buttonSize);

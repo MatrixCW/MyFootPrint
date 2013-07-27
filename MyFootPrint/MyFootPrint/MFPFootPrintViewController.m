@@ -9,6 +9,7 @@
 #import "MFPFootPrintViewController.h"
 #import "dataUtil.h"
 #import "CacheManager.h"
+#import "MFPConstants.h"
 @interface MFPFootPrintViewController ()
 
 @end
@@ -51,13 +52,16 @@
     [self.footPrintMenu buttonsWillAnimateFromButton:sender withFrame:self.footPrintButton.frame inView:self.view];
 }
 
+- (IBAction)shareButtonPressed:(id)sender {
+}
+
 #pragma - radial menu delegate methods
 - (NSInteger) numberOfItemsInRadialMenu:(ALRadialMenu *)footMenu{
     return 4;
 }
 
 - (NSInteger) arcRadiusForRadialMenu:(ALRadialMenu *)radialMenu {
-	return 60;
+	return FOOT_PRINT_BUTTON_RADIUS;
 }
 
 - (NSInteger) arcSizeForRadialMenu:(ALRadialMenu *)radialMenu {
@@ -66,13 +70,13 @@
 
 - (UIImage *) radialMenu:(ALRadialMenu *)radialMenu imageForIndex:(NSInteger) index {
     if (index == 1) {
-        return [UIImage imageNamed:@"dribbble"];
+        return [UIImage imageNamed:@"setting"];
     } else if (index == 2) {
-        return [UIImage imageNamed:@"email"];
+        return [UIImage imageNamed:@"postcardcase"];
     } else if (index == 3) {
-        return [UIImage imageNamed:@"facebook500"];
+        return [UIImage imageNamed:@"postcard"];
     } else if (index == 4) {
-        return [UIImage imageNamed:@"email"];
+        return [UIImage imageNamed:@"friends"];
     }
 	
 	return nil;
