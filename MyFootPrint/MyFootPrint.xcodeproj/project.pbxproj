@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BC4CA7317A3C764003A4AE5 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC4CA7217A3C764003A4AE5 /* AssetsLibrary.framework */; };
 		0BEA006B17A35FD600061BB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA006A17A35FD600061BB6 /* UIKit.framework */; };
 		0BEA006D17A35FD600061BB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA006C17A35FD600061BB6 /* Foundation.framework */; };
 		0BEA006F17A35FD600061BB6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA006E17A35FD600061BB6 /* CoreGraphics.framework */; };
@@ -85,6 +86,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BC4CA7217A3C764003A4AE5 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		0BEA006717A35FD600061BB6 /* MyFootPrint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFootPrint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BEA006A17A35FD600061BB6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0BEA006C17A35FD600061BB6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -193,6 +195,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BC4CA7317A3C764003A4AE5 /* AssetsLibrary.framework in Frameworks */,
 				0BEA010D17A3B83100061BB6 /* SystemConfiguration.framework in Frameworks */,
 				0BEA010C17A3B82900061BB6 /* MobileCoreServices.framework in Frameworks */,
 				0BEA010A17A3B1B000061BB6 /* Security.framework in Frameworks */,
@@ -226,6 +229,7 @@
 		0BEA005E17A35FD600061BB6 = {
 			isa = PBXGroup;
 			children = (
+				0BC4CA7217A3C764003A4AE5 /* AssetsLibrary.framework */,
 				0BEA010B17A3B82900061BB6 /* MobileCoreServices.framework */,
 				0BEA010917A3B1B000061BB6 /* Security.framework */,
 				0BEA010717A3B1AB00061BB6 /* CFNetwork.framework */,
@@ -278,9 +282,9 @@
 				0BEA010517A3AE8B00061BB6 /* MFPQueryGeolocation.m */,
 				0BEA00DC17A3803200061BB6 /* MFPLoginViewController.h */,
 				0BEA00DD17A3803200061BB6 /* MFPLoginViewController.m */,
-				0BEA00DF17A38E3700061BB6 /* MFPConstants.h */,
 				4B0D832017A3AA8900E23681 /* MFPFootPrintViewController.h */,
 				4B0D832117A3AA8900E23681 /* MFPFootPrintViewController.m */,
+				0BEA00DF17A38E3700061BB6 /* MFPConstants.h */,
 				0BEA007117A35FD600061BB6 /* Supporting Files */,
 			);
 			path = MyFootPrint;

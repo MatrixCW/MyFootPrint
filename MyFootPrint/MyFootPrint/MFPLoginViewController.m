@@ -23,10 +23,8 @@
     [self.renrenLoginButton addTarget:self action:@selector(renrenLogin) forControlEvents:UIControlEventTouchUpInside];
     [self.sinaWeiboLoginButton addTarget:self action:@selector(weiboLogin) forControlEvents:UIControlEventTouchUpInside];
     
-    self.userInfo = [NSMutableDictionary dictionaryWithCapacity:3];
-    
+    self.userInfo = [NSMutableDictionary dictionaryWithCapacity:4];
 
-        
 }
 
 
