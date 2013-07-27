@@ -117,6 +117,7 @@
 
 ///array storing the buttons to be displayed
 @property (nonatomic, strong) NSMutableArray *items;
+@property BOOL buttonsAreShown;
 @end
 
 

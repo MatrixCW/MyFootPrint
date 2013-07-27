@@ -12,6 +12,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *footPrintButton;
 - (IBAction)footPrintButtonPressed:(id)sender;
 - (IBAction)shareButtonPressed:(id)sender;
-@property (weak, nonatomic) IBOutlet UIButton *cameraButtonPressed;
+- (IBAction)cameraButtonPressed:(id)sender;
 @property (strong, nonatomic) ALRadialMenu *footPrintMenu;
 @end
