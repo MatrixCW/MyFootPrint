@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MFPQueryGeolocation.h"
 
-@interface MFPUploadPhotoViewController : UIViewController<QueryGeoInfoFinished,UICollectionViewDelegate,UICollectionViewDataSource>
+@interface MFPUploadPhotoViewController : UIViewController<QueryGeoInfoFinished,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
 @property UIImageView *selectedImage;
 @property int count;

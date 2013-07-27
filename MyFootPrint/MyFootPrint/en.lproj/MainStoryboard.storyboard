@@ -259,12 +259,14 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wlv-Ti-Q9X">
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="upload_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nco-Dt-k8x"/>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YZB-ud-3Hx">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="281" id="a62-iH-yPQ"/>
+                                    <constraint firstAttribute="height" constant="320" id="7o5-5Z-FhB"/>
+                                    <constraint firstAttribute="width" constant="253" id="FGs-oc-pCt"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dbe-w9-MsM">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="EWR-WU-KAn">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -272,17 +274,27 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="你的足迹" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLT-zq-h9D">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wlv-Ti-Q9X" firstAttribute="leading" secondItem="JKg-IX-hay" secondAttribute="leading" type="default" id="Z0y-FZ-K75"/>
-                            <constraint firstItem="wlv-Ti-Q9X" firstAttribute="top" secondItem="JKg-IX-hay" secondAttribute="top" constant="117" id="aos-QZ-r6i"/>
-                            <constraint firstItem="wlv-Ti-Q9X" firstAttribute="trailing" secondItem="JKg-IX-hay" secondAttribute="trailing" type="default" id="yvd-Gm-8H5"/>
+                            <constraint firstItem="YZB-ud-3Hx" firstAttribute="centerX" secondItem="MLT-zq-h9D" secondAttribute="centerX" type="default" id="Q5p-3g-vCA"/>
+                            <constraint firstItem="YZB-ud-3Hx" firstAttribute="top" secondItem="JKg-IX-hay" secondAttribute="top" constant="92" id="SeF-Dv-rWO"/>
+                            <constraint firstItem="Nco-Dt-k8x" firstAttribute="bottom" secondItem="JKg-IX-hay" secondAttribute="bottom" type="default" id="Sni-xP-eiM"/>
+                            <constraint firstItem="Nco-Dt-k8x" firstAttribute="top" secondItem="JKg-IX-hay" secondAttribute="top" type="default" id="cPy-CZ-Ewc"/>
+                            <constraint firstItem="Nco-Dt-k8x" firstAttribute="leading" secondItem="JKg-IX-hay" secondAttribute="leading" type="default" id="eXY-e5-M9c"/>
+                            <constraint firstItem="MLT-zq-h9D" firstAttribute="centerX" secondItem="Nco-Dt-k8x" secondAttribute="centerX" type="default" id="j7P-PW-Z87"/>
+                            <constraint firstItem="Nco-Dt-k8x" firstAttribute="trailing" secondItem="JKg-IX-hay" secondAttribute="trailing" type="default" id="r47-HK-lPx"/>
+                            <constraint firstItem="MLT-zq-h9D" firstAttribute="top" secondItem="JKg-IX-hay" secondAttribute="top" constant="47" id="vKL-BN-46g"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cmF-zy-81G"/>
                     <connections>
-                        <outlet property="displayProvinces" destination="wlv-Ti-Q9X" id="bcd-3H-Eya"/>
+                        <outlet property="displayProvinces" destination="YZB-ud-3Hx" id="Bjp-xr-50e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wi5-tG-u9o" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -316,6 +328,7 @@
         <image name="home2.png" width="174" height="174"/>
         <image name="rr_login.png" width="234" height="48"/>
         <image name="share.png" width="78" height="52"/>
+        <image name="upload_bg.png" width="640" height="960"/>
         <image name="wb_login.png" width="234" height="48"/>
     </resources>
     <classes>
