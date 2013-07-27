@@ -22,8 +22,23 @@
     [AFJSONRequestOperation JSONRequestOperationWithRequest:request
      
                                                     success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
-                                                        NSString *parsed = [JSON objectForKey:@"status"];
-                                                        for(NSDictionary* dict in parsedResults){
+                                                        NSString *queryStatus = [JSON objectForKey:@"status"];
+                                                        if([queryStatus isEqualToString:@"OK"]){
+                                                            
+                                                            NSDictionary* queryResults = [JSON objectForKey:@"result"];
+                                                            NSDictionary* addressComponent = [queryResults objectForKey:@"addressComponent"];
+                                                                
+                                                            
+                                                            NSLog(@"%@", addressComponent);
+                                                            
+
+                                                            
+                                                        }
+                                                        else{
+                                                            
+                                                            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"location service failed" message:@"please check your network, or try later" delegate:Nil cancelButtonTitle:@"got it" otherButtonTitles:Nil, nil];
+                                                            
+                                                            [alert show];
                                                             
                                                         }
                                                     }
