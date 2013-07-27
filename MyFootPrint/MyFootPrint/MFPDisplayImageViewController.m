@@ -60,6 +60,8 @@
         
     cell.imageView.image = [self.imageArray objectAtIndex:indexPath.row];
     
+    NSLog(@"here image ratio %f",cell.imageView.image.size.width/cell.imageView.image.size.height);
+    
     cell.selected = NO;
     
     cell.checkView.hidden = YES;
@@ -108,7 +110,15 @@
 // 1
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    return CGSizeMake(200, 200);
+    
+    
+    UIImage *toDisplay = [self.imageArray objectAtIndex:indexPath.row];
+    
+    
+    if(toDisplay.size.width/toDisplay.size.height < 1)
+       return CGSizeMake(200, 300);
+    else
+        return CGSizeMake(300, 200);
 }
 
 /*

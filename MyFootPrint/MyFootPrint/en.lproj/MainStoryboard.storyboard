@@ -421,7 +421,7 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FZH-Jz-A0U">
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="199" id="g7R-wv-SJ5"/>
+                                                        <constraint firstAttribute="height" constant="199" type="user" id="g7R-wv-SJ5"/>
                                                     </constraints>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="check.png" translatesAutoresizingMaskIntoConstraints="NO" id="yVA-YI-YgW">
@@ -436,8 +436,9 @@
                                         <constraints>
                                             <constraint firstItem="FZH-Jz-A0U" firstAttribute="trailing" secondItem="6aX-ad-eqS" secondAttribute="trailing" type="default" id="2ep-IS-zFj"/>
                                             <constraint firstAttribute="trailing" secondItem="yVA-YI-YgW" secondAttribute="trailing" constant="14" id="8CZ-PB-seO"/>
-                                            <constraint firstItem="FZH-Jz-A0U" firstAttribute="top" secondItem="6aX-ad-eqS" secondAttribute="top" constant="8" id="KbR-20-mt1"/>
+                                            <constraint firstItem="FZH-Jz-A0U" firstAttribute="top" secondItem="6aX-ad-eqS" secondAttribute="top" constant="8" type="user" id="KbR-20-mt1"/>
                                             <constraint firstItem="FZH-Jz-A0U" firstAttribute="leading" secondItem="6aX-ad-eqS" secondAttribute="leading" type="default" id="euh-MS-eqh"/>
+                                            <constraint firstAttribute="bottom" secondItem="FZH-Jz-A0U" secondAttribute="bottom" constant="14" type="user" id="fc2-9a-a6L"/>
                                             <constraint firstItem="yVA-YI-YgW" firstAttribute="top" secondItem="6aX-ad-eqS" secondAttribute="top" constant="15" id="oJo-7N-pZv"/>
                                         </constraints>
                                         <connections>

@@ -12,5 +12,5 @@
 @property (weak, nonatomic) IBOutlet UIImageView *checkView;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property BOOL cellSelected;
-
+@property int imageOrientation; //0 portrait, 1 landscape
 @end
