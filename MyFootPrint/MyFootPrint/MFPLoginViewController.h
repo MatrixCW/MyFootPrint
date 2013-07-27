@@ -10,11 +10,12 @@
 #import "MFPConstants.h"
 
 
-@interface MFPLoginViewController : UIViewController
+@interface MFPLoginViewController : UIViewController<UIWebViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *renrenLoginButton;
 @property (weak, nonatomic) IBOutlet UIButton *sinaWeiboLoginButton;
 
+@property UIWebView *rrLogin;
 @property NSString *currentLoginPlatform;
 
 @property NSMutableDictionary *userInfo;

@@ -158,28 +158,6 @@
         <image name="rr_login.png" width="234" height="48"/>
         <image name="wb_login.png" width="234" height="48"/>
     </resources>
-    <classes>
-        <class className="MFPFootPrintViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MFPFootPrintViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="footPrintButtonPressed:"/>
-                <relationship kind="outlet" name="footPrintButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="MFPLoginViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MFPLoginViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="renrenLoginButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="sinaWeiboLoginButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="MFPUploadPhotoViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MFPUploadPhotoViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

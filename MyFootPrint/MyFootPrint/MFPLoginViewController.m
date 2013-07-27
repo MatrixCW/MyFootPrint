@@ -20,15 +20,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.rrLogin.delegate = self;
     [self.renrenLoginButton addTarget:self action:@selector(renrenLogin) forControlEvents:UIControlEventTouchUpInside];
     [self.sinaWeiboLoginButton addTarget:self action:@selector(weiboLogin) forControlEvents:UIControlEventTouchUpInside];
     
     self.userInfo = [NSMutableDictionary dictionaryWithCapacity:3];
     
 
-    [MFPQueryGeolocation getGeolocation:CGPointMake(30, 104)];
-
-        
 }
 
 
@@ -187,13 +185,25 @@
     
     self.currentLoginPlatform = kBD_SOCIAL_LOGIN_PLATFORM_RENREN;
     
-    NSString *platformType = [NSString stringWithFormat:kBD_SOCIAL_LOGIN_PLATFORM_RENREN];
+   /* NSString *platformType = [NSString stringWithFormat:kBD_SOCIAL_LOGIN_PLATFORM_RENREN];
     
     if ([BDSocialLoginSDK isAccessTokenValidWithPlatformType:platformType]) {
         [self getUserInfoWithPlatformType:platformType];
     } else {
         [self authorizeWithPlatformType:platformType];
-    }
+    }*/
+    
+    [self.rrLogin loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"about:blank"]]];
+    NSString *redirectUrlString = @"http://home.friendoc.net/footprint/v1.0/";
+    //NSString *authFormatString = @"https://ivle.nus.edu.sg/api/login/?apikey=%@";
+    
+    NSLog(@"%@", redirectUrlString);
+    //NSString *urlString = [NSString stringWithFormat:authFormatString, apikey, redirectUrlString];
+    NSURL *url = [NSURL URLWithString:redirectUrlString];
+    
+    [self.rrLogin loadRequest:[NSURLRequest requestWithURL:url]];
+    
+    
      
 
     
@@ -215,6 +225,21 @@
      
     
 }
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+	
+    NSString *urlString = request.URL.absoluteString;
+	NSLog(@"urlString: %@", urlString);
+	
+    //[self checkForAccessToken:urlString];
+    
+    return TRUE;
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView{
+    NSLog(@"finished lodding");
+}
+
 
 -(void)goToNextStage{
     [self performSegueWithIdentifier:SEGUE_FROM_LOGIN_TO_UPLOADING sender:self];
