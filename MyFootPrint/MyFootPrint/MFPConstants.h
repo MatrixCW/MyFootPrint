@@ -12,7 +12,8 @@
 [NSString stringWithFormat:@"\%@%@", \
 [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0],@"/userInfo.txt"]\
 
-
+#define UPLOAD_PHOTO_VC_BG @"upload_bg.png"
+#define SEGUE_FROM_LOGIN_TO_UPLOADING @"SEGUE_TO_UPLOAD_VC"
 @interface MFPConstants : NSObject
 
 @end
