@@ -64,10 +64,10 @@
                                     <action selector="shareButtonPressed:" destination="MCW-Kn-huR" eventType="touchUpInside" id="uuV-zZ-wwW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06i-5K-fFN">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHg-CO-8Fj">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="aGF-ce-bVm"/>
-                                    <constraint firstAttribute="width" constant="45" id="ffR-ma-57D"/>
+                                    <constraint firstAttribute="height" constant="31" id="67n-O6-mkI"/>
+                                    <constraint firstAttribute="width" constant="45" id="Wz8-Iv-2ah"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" backgroundImage="camera.png">
@@ -77,15 +77,18 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="cameraButtonPressed:" destination="MCW-Kn-huR" eventType="touchUpInside" id="N3V-on-JUM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="06i-5K-fFN" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="HaV-re-FdK"/>
+                            <constraint firstItem="YHg-CO-8Fj" firstAttribute="top" secondItem="TGK-Ax-aZi" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="02j-bn-xdE"/>
+                            <constraint firstAttribute="trailing" secondItem="YHg-CO-8Fj" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="44C-68-MgW"/>
                             <constraint firstItem="Atq-Nf-M6A" firstAttribute="leading" secondItem="RnY-IY-aNN" secondAttribute="leading" type="default" id="RBy-O3-lXH"/>
                             <constraint firstAttribute="trailing" secondItem="LP2-ik-OLI" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="SBB-EQ-kVe"/>
                             <constraint firstItem="WTv-QC-sBb" firstAttribute="top" secondItem="RnY-IY-aNN" secondAttribute="top" constant="408" id="T9G-v0-SFQ"/>
-                            <constraint firstItem="06i-5K-fFN" firstAttribute="top" secondItem="TGK-Ax-aZi" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="U3U-zr-qUs"/>
                             <constraint firstItem="WTv-QC-sBb" firstAttribute="leading" secondItem="b9q-7f-EA6" secondAttribute="leading" type="default" id="WXP-bD-2Rz"/>
                             <constraint firstItem="TGK-Ax-aZi" firstAttribute="trailing" secondItem="RnY-IY-aNN" secondAttribute="trailing" type="default" id="abt-ju-z1A"/>
                             <constraint firstItem="TGK-Ax-aZi" firstAttribute="leading" secondItem="RnY-IY-aNN" secondAttribute="leading" type="default" id="acC-Pa-Qnl"/>
@@ -100,7 +103,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="tX1-aP-5nf"/>
                     <connections>
-                        <outlet property="cameraButtonPressed" destination="06i-5K-fFN" id="Qu9-Ku-chS"/>
                         <outlet property="footPrintButton" destination="WTv-QC-sBb" id="zg8-2W-L1S"/>
                         <segue destination="2" kind="modal" identifier="POP_LOGIN_VC" id="3cn-2v-oyn"/>
                     </connections>
@@ -265,7 +267,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wi5-tG-u9o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="981" y="749"/>
+            <point key="canvasLocation" x="-59" y="-827"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QIW-ao-hUY">

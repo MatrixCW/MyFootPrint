@@ -20,6 +20,7 @@
 		return;
 	}
 
+    self.buttonsAreShown = YES;
 	int itemCount = [self.delegate numberOfItemsInRadialMenu:self];
 	if (itemCount == 0) {
 		//without any items to display there's nothing todo
@@ -86,6 +87,7 @@
 		[popupButton setImage:[self.delegate radialMenu:self imageForIndex:currentItem] forState:UIControlStateNormal];
 		//set the button tag, delegate, and target action
 		popupButton.tag = currentItem;
+        //popupButton.tag = 99;
 		popupButton.delegate = self;
 		[popupButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
 		
@@ -126,6 +128,7 @@
 	}
 
 	
+    self.buttonsAreShown = NO;
 	//calculate the item fling interval based on the number of items
 	//never go on for more than half a second
 	//FIXME make this configurable
@@ -148,6 +151,8 @@
 		return;
 	}
 	
+    UIButton *button = (UIButton *)sender;
+    button.userInteractionEnabled = NO;
 	if ([self.items count]) {
 		//the items are displayed already, hide them
 		[self itemsWillDisapearIntoButton:sender];
@@ -197,6 +202,7 @@
 
 - (void)buttonPressed:(id)sender  {
 	ALRadialButton *button = (ALRadialButton *)sender;
+    button.userInteractionEnabled = NO;
 	[self.delegate radialMenu:self didSelectItemAtIndex:button.tag];
 }
 

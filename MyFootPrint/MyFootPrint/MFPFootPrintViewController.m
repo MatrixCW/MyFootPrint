@@ -50,9 +50,18 @@
 }
 - (IBAction)footPrintButtonPressed:(id)sender {
     [self.footPrintMenu buttonsWillAnimateFromButton:sender withFrame:self.footPrintButton.frame inView:self.view];
+    UIButton *button = (UIButton *)sender;
+    button.userInteractionEnabled = YES;
 }
 
 - (IBAction)shareButtonPressed:(id)sender {
+    if(self.footPrintMenu.buttonsAreShown)
+        [self.footPrintMenu itemsWillDisapearIntoButton:self.footPrintButton];
+}
+
+- (IBAction)cameraButtonPressed:(id)sender {
+    if(self.footPrintMenu.buttonsAreShown)
+        [self.footPrintMenu itemsWillDisapearIntoButton:self.footPrintButton];
 }
 
 #pragma - radial menu delegate methods
@@ -99,10 +108,10 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
     UITouch *touch = [[event allTouches] anyObject];
-    if ([touch view].tag == 0) {
+    if ([touch view].tag == 0 && self.footPrintMenu.buttonsAreShown) {
+
         [self.footPrintMenu itemsWillDisapearIntoButton:self.footPrintButton];
     }
-    
     [super touchesBegan:touches withEvent:event];
 }
 @end
