@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MFPQueryGeolocation.h"
+#import "MFPImageCell.h"
 
 @interface MFPUploadPhotoViewController : UIViewController<QueryGeoInfoFinished,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 

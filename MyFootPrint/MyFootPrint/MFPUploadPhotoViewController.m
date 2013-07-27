@@ -10,6 +10,7 @@
 #import "MFPConstants.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <CoreLocation/CLLocation.h>
+#import <QuartzCore/QuartzCore.h>
 
 @interface MFPUploadPhotoViewController ()
 
@@ -128,20 +129,35 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
-    return 10;
+    return self.provincesAndPhotos.count;
     
 }
 
-/*
+
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    FlickrPhotoCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"FlickrCell" forIndexPath:indexPath];
-    NSString *searchTerm = self.searches[indexPath.section];
-    cell.photo = self.searchResults[searchTerm]
-    [indexPath.row];
+    MFPImageCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"DisplayImageCell" forIndexPath:indexPath];
+    NSArray *keys = [self.provincesAndPhotos allKeys];
+    NSString *provinceName = [keys objectAtIndex:indexPath.row];
+    
+    ALAsset *displayAsset = [(NSMutableArray*)[self.provincesAndPhotos objectForKey:provinceName] objectAtIndex:0];
+    UIImage *image = [self imageForAsset:displayAsset];
+    
+    cell.imagePreviewView.image = image;
+    
+    cell.nameTag.text = [self removeRedudentStrin:provinceName];
+    
     return cell;
 }
- */
+
+-(UIImage*) imageForAsset:(ALAsset*) aAsset{
+	
+	ALAssetRepresentation *rep;
+	
+	rep = [aAsset defaultRepresentation];
+    
+	return [UIImage imageWithCGImage:[rep fullResolutionImage]];
+}
 
 /*- (UICollectionReusableView *)collectionView:
  (UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
@@ -152,7 +168,7 @@
 #pragma mark - UICollectionViewDelegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    // TODO: Select Item
+    NSLog(@"haha");
 }
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
     // TODO: Deselect item
@@ -163,17 +179,47 @@
 // 1
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    return CGSizeMake(80, 80);
+    return CGSizeMake(100, 100);
 }
 
 // 3
 - (UIEdgeInsets)collectionView:
 (UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
-    return UIEdgeInsetsMake(30, 30, 30, 30);
+    
+    if([collectionView numberOfItemsInSection:section == 1])
+       return UIEdgeInsetsMake(30, 30, 20, 30);
+    else
+       return UIEdgeInsetsMake(30, 10, 20, 30);
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
     return 5; // This is the minimum inter item spacing, can be more
+}
+
+- (void)addShadowToView:(UIView *)view{
+    view.layer.masksToBounds = YES;
+    view.layer.shadowColor = [UIColor blackColor].CGColor;
+    view.layer.shadowOffset = CGSizeMake(0.0f, 5.0f);
+    view.layer.shadowOpacity = 0.5f;
+}
+
+-(NSString *)removeRedudentStrin:(NSString*)str{
+    
+    NSString *temp = [[str componentsSeparatedByString:@","] objectAtIndex:0];
+    
+    if(temp)
+        str = temp;
+    
+    str = [str stringByReplacingOccurrencesOfString:@"自治区" withString:@""];
+    str = [str stringByReplacingOccurrencesOfString:@"特别行政区" withString:@""];
+    str = [str stringByReplacingOccurrencesOfString:@"省" withString:@""];
+    str = [str stringByReplacingOccurrencesOfString:@"壮族" withString:@""];
+    str = [str stringByReplacingOccurrencesOfString:@"回族" withString:@""];
+    str = [str stringByReplacingOccurrencesOfString:@"维吾尔族" withString:@""];
+    
+    return str;
+    
+    
 }
 
 //-(CGSize)col

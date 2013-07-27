@@ -10,7 +10,7 @@
 
 @interface MFPImageCell : UICollectionViewCell
 
-@property (weak, nonatomic) IBOutlet UIImageView *imagePreviewView;
+@property (strong, nonatomic) IBOutlet UIImageView *imagePreviewView;
 
 @property (weak, nonatomic) IBOutlet UILabel *nameTag;
 
