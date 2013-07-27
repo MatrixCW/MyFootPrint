@@ -43,7 +43,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_main.png" translatesAutoresizingMaskIntoConstraints="NO" id="Atq-Nf-M6A">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="480" id="rWP-Xk-Lwe"/>
+                                    <constraint firstAttribute="height" constant="480" id="YRv-Ge-O8o"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTv-QC-sBb">
@@ -139,9 +139,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="LP2-ik-OLI" firstAttribute="top" secondItem="RnY-IY-aNN" secondAttribute="top" constant="8" id="11V-Ca-YxZ"/>
                             <constraint firstItem="euL-aC-hx3" firstAttribute="centerX" secondItem="06i-5K-fFN" secondAttribute="centerX" type="default" id="7is-gJ-mqR"/>
                             <constraint firstAttribute="trailing" secondItem="06i-5K-fFN" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="HaV-re-FdK"/>
                             <constraint firstItem="aGi-lV-hfz" firstAttribute="top" secondItem="RnY-IY-aNN" secondAttribute="top" constant="65" id="Mf1-r4-UlP"/>
+                            <constraint firstItem="b9q-7f-EA6" firstAttribute="bottom" secondItem="LP2-ik-OLI" secondAttribute="bottom" type="default" id="Mww-oO-Y6j"/>
                             <constraint firstItem="Atq-Nf-M6A" firstAttribute="leading" secondItem="RnY-IY-aNN" secondAttribute="leading" type="default" id="RBy-O3-lXH"/>
                             <constraint firstAttribute="trailing" secondItem="LP2-ik-OLI" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="SBB-EQ-kVe"/>
                             <constraint firstItem="WTv-QC-sBb" firstAttribute="top" secondItem="RnY-IY-aNN" secondAttribute="top" constant="408" id="T9G-v0-SFQ"/>
@@ -153,15 +155,14 @@
                             <constraint firstItem="TGK-Ax-aZi" firstAttribute="top" secondItem="RnY-IY-aNN" secondAttribute="top" type="default" id="bZx-W7-c21"/>
                             <constraint firstItem="Atq-Nf-M6A" firstAttribute="trailing" secondItem="RnY-IY-aNN" secondAttribute="trailing" type="default" id="hVY-c1-dyH"/>
                             <constraint firstItem="WTv-QC-sBb" firstAttribute="trailing" secondItem="b9q-7f-EA6" secondAttribute="trailing" type="default" id="hfL-WU-taj"/>
-                            <constraint firstItem="LP2-ik-OLI" firstAttribute="top" secondItem="RnY-IY-aNN" secondAttribute="top" constant="8" id="mHd-dY-39p"/>
                             <constraint firstItem="Atq-Nf-M6A" firstAttribute="top" secondItem="RnY-IY-aNN" secondAttribute="top" type="default" id="ppF-PL-zHx"/>
                             <constraint firstItem="TGK-Ax-aZi" firstAttribute="centerX" secondItem="b9q-7f-EA6" secondAttribute="centerX" type="default" id="r2l-N2-noO"/>
-                            <constraint firstItem="LP2-ik-OLI" firstAttribute="bottom" secondItem="b9q-7f-EA6" secondAttribute="bottom" type="default" id="rPa-p5-q8d"/>
                             <constraint firstAttribute="bottom" secondItem="euL-aC-hx3" secondAttribute="bottom" constant="51" id="w1b-3k-PJ7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tX1-aP-5nf"/>
                     <connections>
+                        <outlet property="background" destination="Atq-Nf-M6A" id="SsA-Sn-1vl"/>
                         <outlet property="footPrintButton" destination="WTv-QC-sBb" id="zg8-2W-L1S"/>
                         <segue destination="2" kind="modal" identifier="POP_LOGIN_VC" id="3cn-2v-oyn"/>
                     </connections>

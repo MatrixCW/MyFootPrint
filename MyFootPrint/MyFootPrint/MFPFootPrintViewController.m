@@ -10,6 +10,11 @@
 #import "dataUtil.h"
 #import "CacheManager.h"
 #import "MFPConstants.h"
+#import "AFJSONRequestOperation.h"
+#import "MFPAPIClient.h"
+#define BLUE_PROVINCE @"%@blue"
+#import "TRStringExtensions.h"
+#define CREATE_USER_URL @"http://www.friendoc.com.cn:3000/api/rrlogin.json?rrid=%@&name=%@&thumbnail=%@&token=%@"
 @interface MFPFootPrintViewController ()
 
 @end
@@ -31,6 +36,8 @@
     self.footPrintMenu = [[ALRadialMenu alloc] init];
     self.footPrintMenu.delegate = self;
 	// Do any additional setup after loading the view.
+    NSArray *a = [NSArray array];
+    [self lightUpMapWithArray:a];
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,6 +47,19 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated{
+    NSString *rrid = [[dataUtil sharedInstance] rrid];
+    NSString *name = [[dataUtil sharedInstance] name];
+    NSString *token = [[dataUtil sharedInstance] token];
+    NSString *thumbnail = [[dataUtil sharedInstance] thumbnail];
+    NSURL *url = [NSURL URLWithString:[[NSString stringWithFormat:CREATE_USER_URL,rrid,name,thumbnail,token] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:[NSURLRequest requestWithURL:url] success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
+        NSLog(@"%@",JSON);
+        [[dataUtil sharedInstance] setUid:[JSON objectForKey:@"id"]];
+    } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
+        NSLog(@"Error: %@", error);
+    }];
+    if(![[dataUtil sharedInstance] uid])
+        [operation start];
     if (![[dataUtil sharedInstance] isLoggedIn]){
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
         NSLog(@"logged in!");
@@ -48,6 +68,7 @@
         }];
     }
 }
+
 - (IBAction)footPrintButtonPressed:(id)sender {
     [self.footPrintMenu buttonsWillAnimateFromButton:sender withFrame:self.footPrintButton.frame inView:self.view];
     UIButton *button = (UIButton *)sender;
@@ -113,5 +134,34 @@
         [self.footPrintMenu itemsWillDisapearIntoButton:self.footPrintButton];
     }
     [super touchesBegan:touches withEvent:event];
+}
+
+- (void)lightUpMapWithArray:(NSArray *)traveledProvince{
+    NSArray *provinces = [NSArray arrayWithObjects:@"4",@"2",@"3", nil];
+    for(NSString *s in provinces){
+        UIImage *province = [UIImage imageNamed:[NSString stringWithFormat:BLUE_PROVINCE,s]];
+        UIImageView *imgView = [[UIImageView alloc] initWithImage:province];
+        imgView.frame = CGRectMake(0, 0, 320, 480);
+        
+        //imgView.frame = self.background.frame;
+        //NSLog(@"width%f, height%f",imgView.frame.origin.x,imgView.frame.origin.y);
+        //NSLog(@"widtfafah%f, height%f",self.background.frame.size.width,self.background.frame.origin.y);
+        
+        [self.view addSubview:imgView];
+    }
+}
+
+- (void)checkUID{
+    NSString *rrid = [[dataUtil sharedInstance] rrid];
+    NSString *name = [[dataUtil sharedInstance] name];
+    NSString *token = [[dataUtil sharedInstance] token];
+    NSString *thumbnail = [[dataUtil sharedInstance] thumbnail];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:CREATE_USER_URL,rrid,name,thumbnail,token]];
+    [AFJSONRequestOperation JSONRequestOperationWithRequest:[NSURLRequest requestWithURL:url] success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
+        NSLog(@"%@",JSON);
+    } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
+        NSLog(@"Error: %@", error);
+    }];
+    
 }
 @end
