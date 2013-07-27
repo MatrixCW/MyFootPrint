@@ -11,7 +11,7 @@
 
 @implementation MFPQueryGeolocation
 
-+ (void)getGeolocation:(CGPoint)coordinates {
+-(void)getGeolocation:(CGPoint)coordinates {
     
     NSString *queryUrl = [NSString stringWithFormat:@"http://api.map.baidu.com/geocoder?location=%f,%f&output=json&key=", coordinates.x,coordinates.y];
     NSURL *url = [NSURL URLWithString:queryUrl];
@@ -29,7 +29,14 @@
                                                             NSDictionary* addressComponent = [queryResults objectForKey:@"addressComponent"];
                                                                 
                                                             
-                                                            NSLog(@"%@", addressComponent);
+                                                            NSString *city = [addressComponent objectForKey:@"city"];
+                                                            NSString *province = [addressComponent objectForKey:@"province"];
+                                                            
+                                                            NSString *finalResult = [NSString stringWithFormat:@"%@,%@",province,city];
+                                                            
+                                                            NSLog(@"%@",finalResult);
+                                                            [self.myDelegate copyQueryResults:finalResult];
+                                                            
                                                             
 
                                                             
@@ -41,6 +48,8 @@
                                                             [alert show];
                                                             
                                                         }
+                                                        
+                        
                                                     }
      
                                                     failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {

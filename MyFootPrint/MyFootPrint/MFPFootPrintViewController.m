@@ -7,7 +7,8 @@
 //
 
 #import "MFPFootPrintViewController.h"
-
+#import "dataUtil.h"
+#import "CacheManager.h"
 @interface MFPFootPrintViewController ()
 
 @end
@@ -37,6 +38,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidAppear:(BOOL)animated{
+    if (![[dataUtil sharedInstance] isLoggedIn]){
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+        NSLog(@"logged in!");
+        UINavigationController* navVC = [storyboard instantiateViewControllerWithIdentifier:@"LoginView"];
+        [self presentViewController:navVC animated:YES completion:^{
+        }];
+    }
+}
 - (IBAction)footPrintButtonPressed:(id)sender {
     [self.footPrintMenu buttonsWillAnimateFromButton:sender withFrame:self.footPrintButton.frame inView:self.view];
 }

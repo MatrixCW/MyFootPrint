@@ -9,6 +9,8 @@
 #import "MFPLoginViewController.h"
 #import <BDSocialLogin/BDSocialLoginSDK.h>
 #import "MFPQueryGeolocation.h"
+#import "dataUtil.h"
+#import "CacheManager.h"
 @interface MFPLoginViewController ()
 
 @end
@@ -21,14 +23,15 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.rrLogin.delegate = self;
-    [self.renrenLoginButton addTarget:self action:@selector(renrenLogin) forControlEvents:UIControlEventTouchUpInside];
     [self.sinaWeiboLoginButton addTarget:self action:@selector(weiboLogin) forControlEvents:UIControlEventTouchUpInside];
     
-    self.userInfo = [NSMutableDictionary dictionaryWithCapacity:3];
-    
+    self.userInfo = [NSMutableDictionary dictionaryWithCapacity:4];
 
 }
 
+- (void)viewDidAppear:(BOOL)animated{
+
+}
 
 -(void)getUserInfoWithPlatformType:(NSString *)platformType
 {
@@ -185,15 +188,6 @@
     
     self.currentLoginPlatform = kBD_SOCIAL_LOGIN_PLATFORM_RENREN;
     
-   /* NSString *platformType = [NSString stringWithFormat:kBD_SOCIAL_LOGIN_PLATFORM_RENREN];
-    
-    if ([BDSocialLoginSDK isAccessTokenValidWithPlatformType:platformType]) {
-        [self getUserInfoWithPlatformType:platformType];
-    } else {
-        [self authorizeWithPlatformType:platformType];
-    }*/
-    
-    [self.rrLogin loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"about:blank"]]];
     NSString *redirectUrlString = @"http://home.friendoc.net/footprint/v1.0/";
     //NSString *authFormatString = @"https://ivle.nus.edu.sg/api/login/?apikey=%@";
     
@@ -202,10 +196,6 @@
     NSURL *url = [NSURL URLWithString:redirectUrlString];
     
     [self.rrLogin loadRequest:[NSURLRequest requestWithURL:url]];
-    
-    
-     
-
     
 }
 
@@ -226,19 +216,7 @@
     
 }
 
-- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
-	
-    NSString *urlString = request.URL.absoluteString;
-	NSLog(@"urlString: %@", urlString);
-	
-    //[self checkForAccessToken:urlString];
-    
-    return TRUE;
-}
 
-- (void)webViewDidFinishLoad:(UIWebView *)webView{
-    NSLog(@"finished lodding");
-}
 
 
 -(void)goToNextStage{

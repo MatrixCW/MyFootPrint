@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BC4CA7317A3C764003A4AE5 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC4CA7217A3C764003A4AE5 /* AssetsLibrary.framework */; };
 		0BEA006B17A35FD600061BB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA006A17A35FD600061BB6 /* UIKit.framework */; };
 		0BEA006D17A35FD600061BB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA006C17A35FD600061BB6 /* Foundation.framework */; };
 		0BEA006F17A35FD600061BB6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA006E17A35FD600061BB6 /* CoreGraphics.framework */; };
@@ -35,7 +36,6 @@
 		0BEA00CD17A3658100061BB6 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA00BE17A3658100061BB6 /* SBJsonStreamWriterAccumulator.m */; };
 		0BEA00CE17A3658100061BB6 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA00C017A3658100061BB6 /* SBJsonStreamWriterState.m */; };
 		0BEA00CF17A3658100061BB6 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA00C217A3658100061BB6 /* SBJsonWriter.m */; };
-		0BEA00D117A365AA00061BB6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA00D017A365AA00061BB6 /* SystemConfiguration.framework */; };
 		0BEA00D317A365AD00061BB6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA00D217A365AD00061BB6 /* QuartzCore.framework */; };
 		0BEA00D517A365BB00061BB6 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA00D417A365BB00061BB6 /* CoreTelephony.framework */; };
 		0BEA00D717A365C700061BB6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA00D617A365C700061BB6 /* libsqlite3.dylib */; };
@@ -56,6 +56,8 @@
 		0BEA010617A3AE8B00061BB6 /* MFPQueryGeolocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA010517A3AE8B00061BB6 /* MFPQueryGeolocation.m */; };
 		0BEA010817A3B1AB00061BB6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA010717A3B1AB00061BB6 /* CFNetwork.framework */; };
 		0BEA010A17A3B1B000061BB6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA010917A3B1B000061BB6 /* Security.framework */; };
+		0BEA010C17A3B82900061BB6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA010B17A3B82900061BB6 /* MobileCoreServices.framework */; };
+		0BEA010D17A3B83100061BB6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA00D017A365AA00061BB6 /* SystemConfiguration.framework */; };
 		4B0D832217A3AA8900E23681 /* MFPFootPrintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0D832117A3AA8900E23681 /* MFPFootPrintViewController.m */; };
 		4B0D832817A3AACC00E23681 /* ALRadialButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0D832517A3AACC00E23681 /* ALRadialButton.m */; };
 		4B0D832917A3AACC00E23681 /* ALRadialMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0D832717A3AACC00E23681 /* ALRadialMenu.m */; };
@@ -71,6 +73,14 @@
 		4B37E82817A3B82B00C54C85 /* rr_login.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B37E82117A3B82B00C54C85 /* rr_login.png */; };
 		4B37E82917A3B82B00C54C85 /* wb_login.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B37E82217A3B82B00C54C85 /* wb_login.png */; };
 		4B37E82A17A3B82B00C54C85 /* weibo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B37E82317A3B82B00C54C85 /* weibo.png */; };
+		4B37E82D17A3C91400C54C85 /* MFPrrLoginWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B37E82C17A3C91400C54C85 /* MFPrrLoginWebViewController.m */; };
+		4B37E83317A3E21A00C54C85 /* dataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B37E83217A3E21A00C54C85 /* dataUtil.m */; };
+		4B37E83917A3E26C00C54C85 /* CacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B37E83617A3E26C00C54C85 /* CacheManager.m */; };
+		4B37E83A17A3E26C00C54C85 /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B37E83817A3E26C00C54C85 /* EGOCache.m */; };
+		4B37E83F17A3E38A00C54C85 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4B37E83C17A3E38A00C54C85 /* SVProgressHUD.bundle */; };
+		4B37E84017A3E38A00C54C85 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B37E83E17A3E38A00C54C85 /* SVProgressHUD.m */; };
+		4B37E84117A3E7E300C54C85 /* CacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B37E83617A3E26C00C54C85 /* CacheManager.m */; };
+		4B37E84217A3E7E300C54C85 /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B37E83817A3E26C00C54C85 /* EGOCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +94,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BC4CA7217A3C764003A4AE5 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		0BEA006717A35FD600061BB6 /* MyFootPrint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFootPrint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BEA006A17A35FD600061BB6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0BEA006C17A35FD600061BB6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -166,6 +177,7 @@
 		0BEA010517A3AE8B00061BB6 /* MFPQueryGeolocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPQueryGeolocation.m; sourceTree = "<group>"; };
 		0BEA010717A3B1AB00061BB6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		0BEA010917A3B1B000061BB6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0BEA010B17A3B82900061BB6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		4B0D832017A3AA8900E23681 /* MFPFootPrintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPFootPrintViewController.h; sourceTree = "<group>"; };
 		4B0D832117A3AA8900E23681 /* MFPFootPrintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPFootPrintViewController.m; sourceTree = "<group>"; };
 		4B0D832417A3AACC00E23681 /* ALRadialButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALRadialButton.h; sourceTree = "<group>"; };
@@ -184,6 +196,17 @@
 		4B37E82117A3B82B00C54C85 /* rr_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rr_login.png; sourceTree = "<group>"; };
 		4B37E82217A3B82B00C54C85 /* wb_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wb_login.png; sourceTree = "<group>"; };
 		4B37E82317A3B82B00C54C85 /* weibo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weibo.png; sourceTree = "<group>"; };
+		4B37E82B17A3C91400C54C85 /* MFPrrLoginWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPrrLoginWebViewController.h; sourceTree = "<group>"; };
+		4B37E82C17A3C91400C54C85 /* MFPrrLoginWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPrrLoginWebViewController.m; sourceTree = "<group>"; };
+		4B37E83117A3E21A00C54C85 /* dataUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataUtil.h; sourceTree = "<group>"; };
+		4B37E83217A3E21A00C54C85 /* dataUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dataUtil.m; sourceTree = "<group>"; };
+		4B37E83517A3E26C00C54C85 /* CacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheManager.h; sourceTree = "<group>"; };
+		4B37E83617A3E26C00C54C85 /* CacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheManager.m; sourceTree = "<group>"; };
+		4B37E83717A3E26C00C54C85 /* EGOCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOCache.h; sourceTree = "<group>"; };
+		4B37E83817A3E26C00C54C85 /* EGOCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOCache.m; sourceTree = "<group>"; };
+		4B37E83C17A3E38A00C54C85 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		4B37E83D17A3E38A00C54C85 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		4B37E83E17A3E38A00C54C85 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +214,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BC4CA7317A3C764003A4AE5 /* AssetsLibrary.framework in Frameworks */,
+				0BEA010D17A3B83100061BB6 /* SystemConfiguration.framework in Frameworks */,
+				0BEA010C17A3B82900061BB6 /* MobileCoreServices.framework in Frameworks */,
 				0BEA010A17A3B1B000061BB6 /* Security.framework in Frameworks */,
 				0BEA010817A3B1AB00061BB6 /* CFNetwork.framework in Frameworks */,
 				0BEA00DB17A365D400061BB6 /* libz.1.2.5.dylib in Frameworks */,
@@ -198,7 +224,6 @@
 				0BEA00D717A365C700061BB6 /* libsqlite3.dylib in Frameworks */,
 				0BEA00D517A365BB00061BB6 /* CoreTelephony.framework in Frameworks */,
 				0BEA00D317A365AD00061BB6 /* QuartzCore.framework in Frameworks */,
-				0BEA00D117A365AA00061BB6 /* SystemConfiguration.framework in Frameworks */,
 				0BEA006B17A35FD600061BB6 /* UIKit.framework in Frameworks */,
 				0BEA006D17A35FD600061BB6 /* Foundation.framework in Frameworks */,
 				0BEA006F17A35FD600061BB6 /* CoreGraphics.framework in Frameworks */,
@@ -223,6 +248,10 @@
 		0BEA005E17A35FD600061BB6 = {
 			isa = PBXGroup;
 			children = (
+				4B37E83117A3E21A00C54C85 /* dataUtil.h */,
+				4B37E83217A3E21A00C54C85 /* dataUtil.m */,
+				0BC4CA7217A3C764003A4AE5 /* AssetsLibrary.framework */,
+				0BEA010B17A3B82900061BB6 /* MobileCoreServices.framework */,
 				0BEA010917A3B1B000061BB6 /* Security.framework */,
 				0BEA010717A3B1AB00061BB6 /* CFNetwork.framework */,
 				0BEA00DA17A365D400061BB6 /* libz.1.2.5.dylib */,
@@ -263,6 +292,8 @@
 		0BEA007017A35FD600061BB6 /* MyFootPrint */ = {
 			isa = PBXGroup;
 			children = (
+				4B37E83B17A3E37800C54C85 /* SVProgressHUD */,
+				4B37E83417A3E25E00C54C85 /* CacheManager */,
 				4B0D832A17A3AAFD00E23681 /* images */,
 				4B0D832317A3AACC00E23681 /* ALRadial */,
 				0BEA007917A35FD600061BB6 /* MFPAppDelegate.h */,
@@ -270,13 +301,15 @@
 				0BEA008217A35FD600061BB6 /* MainStoryboard.storyboard */,
 				0BEA00E417A39D7400061BB6 /* MFPUploadPhotoViewController.h */,
 				0BEA00E517A39D7400061BB6 /* MFPUploadPhotoViewController.m */,
+				4B37E82B17A3C91400C54C85 /* MFPrrLoginWebViewController.h */,
+				4B37E82C17A3C91400C54C85 /* MFPrrLoginWebViewController.m */,
 				0BEA010417A3AE8B00061BB6 /* MFPQueryGeolocation.h */,
 				0BEA010517A3AE8B00061BB6 /* MFPQueryGeolocation.m */,
 				0BEA00DC17A3803200061BB6 /* MFPLoginViewController.h */,
 				0BEA00DD17A3803200061BB6 /* MFPLoginViewController.m */,
-				0BEA00DF17A38E3700061BB6 /* MFPConstants.h */,
 				4B0D832017A3AA8900E23681 /* MFPFootPrintViewController.h */,
 				4B0D832117A3AA8900E23681 /* MFPFootPrintViewController.m */,
+				0BEA00DF17A38E3700061BB6 /* MFPConstants.h */,
 				0BEA007117A35FD600061BB6 /* Supporting Files */,
 			);
 			path = MyFootPrint;
@@ -423,6 +456,28 @@
 			path = MyFootPrintTests;
 			sourceTree = SOURCE_ROOT;
 		};
+		4B37E83417A3E25E00C54C85 /* CacheManager */ = {
+			isa = PBXGroup;
+			children = (
+				4B37E83517A3E26C00C54C85 /* CacheManager.h */,
+				4B37E83617A3E26C00C54C85 /* CacheManager.m */,
+				4B37E83717A3E26C00C54C85 /* EGOCache.h */,
+				4B37E83817A3E26C00C54C85 /* EGOCache.m */,
+			);
+			name = CacheManager;
+			sourceTree = "<group>";
+		};
+		4B37E83B17A3E37800C54C85 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				4B37E83C17A3E38A00C54C85 /* SVProgressHUD.bundle */,
+				4B37E83D17A3E38A00C54C85 /* SVProgressHUD.h */,
+				4B37E83E17A3E38A00C54C85 /* SVProgressHUD.m */,
+			);
+			name = SVProgressHUD;
+			path = ALRadial;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -522,6 +577,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BEA009917A35FD600061BB6 /* InfoPlist.strings in Resources */,
+				4B37E83F17A3E38A00C54C85 /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +604,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B37E84117A3E7E300C54C85 /* CacheManager.m in Sources */,
+				4B37E84217A3E7E300C54C85 /* EGOCache.m in Sources */,
 				0BEA007717A35FD600061BB6 /* main.m in Sources */,
 				0BEA007B17A35FD600061BB6 /* MFPAppDelegate.m in Sources */,
 				0BEA00C617A3658100061BB6 /* SBJsonParser.m in Sources */,
@@ -575,6 +633,8 @@
 				0BEA010217A3ADEB00061BB6 /* AFXMLRequestOperation.m in Sources */,
 				0BEA010317A3ADEB00061BB6 /* UIImageView+AFNetworking.m in Sources */,
 				0BEA010617A3AE8B00061BB6 /* MFPQueryGeolocation.m in Sources */,
+				4B37E82D17A3C91400C54C85 /* MFPrrLoginWebViewController.m in Sources */,
+				4B37E83317A3E21A00C54C85 /* dataUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +643,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BEA009C17A35FD600061BB6 /* MyFootPrintTests.m in Sources */,
+				4B37E83917A3E26C00C54C85 /* CacheManager.m in Sources */,
+				4B37E83A17A3E26C00C54C85 /* EGOCache.m in Sources */,
+				4B37E84017A3E38A00C54C85 /* SVProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,6 +759,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7s armv7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -716,6 +780,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7s armv7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

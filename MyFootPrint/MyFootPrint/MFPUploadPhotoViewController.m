@@ -27,7 +27,6 @@
     [self selectPhoto:Nil];
 }
 
-
 - (void)selectPhoto:(UIButton *)sender {
     
     UIImagePickerController *picker = [[UIImagePickerController alloc] init];

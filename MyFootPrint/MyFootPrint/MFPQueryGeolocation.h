@@ -8,8 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+
+@protocol QueryGeoInfoFinished
+
+-(void)copyQueryResults:(NSString*)result;
+
+@end
+
+
 @interface MFPQueryGeolocation : NSObject
 
-+ (void)getGeolocation:(CGPoint)coordinates;
-
+-(void)getGeolocation:(CGPoint)coordinates;
+@property id<QueryGeoInfoFinished> myDelegate;
 @end

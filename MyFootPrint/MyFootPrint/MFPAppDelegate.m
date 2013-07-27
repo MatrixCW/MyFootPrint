@@ -16,8 +16,8 @@
     // Override point for customization after application launch.
 
     
-    NSArray *platforms = [NSArray arrayWithObjects:kBD_SOCIAL_LOGIN_PLATFORM_SINAWEIBO,
-                                                   kBD_SOCIAL_LOGIN_PLATFORM_RENREN,nil];
+    NSArray *platforms = [NSArray arrayWithObjects:kBD_SOCIAL_LOGIN_PLATFORM_SINAWEIBO, nil];
+                                                   //kBD_SOCIAL_LOGIN_PLATFORM_RENREN,nil];
     
     [BDSocialLoginSDK registerApiKey:@"3lgbyRaFn9B7jgoMDI12v8rC" andSupportPlatforms:platforms];
 
