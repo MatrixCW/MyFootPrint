@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/xiawenhai/Library/Developer/Shared/Documentation/DocSets/com.baidu.baidusociallogin.BaiduSocialLogin.docset
+Time: 2013-07-03 10:03:14 +0000

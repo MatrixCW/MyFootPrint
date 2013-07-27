@@ -17,12 +17,31 @@
 		0BEA007F17A35FD600061BB6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BEA007E17A35FD600061BB6 /* Default@2x.png */; };
 		0BEA008117A35FD600061BB6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BEA008017A35FD600061BB6 /* Default-568h@2x.png */; };
 		0BEA008417A35FD600061BB6 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BEA008217A35FD600061BB6 /* MainStoryboard.storyboard */; };
-		0BEA008717A35FD600061BB6 /* MFPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA008617A35FD600061BB6 /* MFPViewController.m */; };
 		0BEA008F17A35FD600061BB6 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA008E17A35FD600061BB6 /* SenTestingKit.framework */; };
 		0BEA009017A35FD600061BB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA006A17A35FD600061BB6 /* UIKit.framework */; };
 		0BEA009117A35FD600061BB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA006C17A35FD600061BB6 /* Foundation.framework */; };
 		0BEA009917A35FD600061BB6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BEA009717A35FD600061BB6 /* InfoPlist.strings */; };
 		0BEA009C17A35FD600061BB6 /* MyFootPrintTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA009B17A35FD600061BB6 /* MyFootPrintTests.m */; };
+		0BEA00C317A3658100061BB6 /* BDSocialLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA00A617A3658100061BB6 /* BDSocialLogin.framework */; };
+		0BEA00C417A3658100061BB6 /* BDSocialLoginSource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0BEA00A717A3658100061BB6 /* BDSocialLoginSource.bundle */; };
+		0BEA00C517A3658100061BB6 /* TencentOpenAPI in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA00AC17A3658100061BB6 /* TencentOpenAPI */; };
+		0BEA00C617A3658100061BB6 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA00B017A3658100061BB6 /* SBJsonParser.m */; };
+		0BEA00C717A3658100061BB6 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA00B217A3658100061BB6 /* SBJsonStreamParser.m */; };
+		0BEA00C817A3658100061BB6 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA00B417A3658100061BB6 /* SBJsonStreamParserAccumulator.m */; };
+		0BEA00C917A3658100061BB6 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA00B617A3658100061BB6 /* SBJsonStreamParserAdapter.m */; };
+		0BEA00CA17A3658100061BB6 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA00B817A3658100061BB6 /* SBJsonStreamParserState.m */; };
+		0BEA00CB17A3658100061BB6 /* SBJsonStreamTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA00BA17A3658100061BB6 /* SBJsonStreamTokeniser.m */; };
+		0BEA00CC17A3658100061BB6 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA00BC17A3658100061BB6 /* SBJsonStreamWriter.m */; };
+		0BEA00CD17A3658100061BB6 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA00BE17A3658100061BB6 /* SBJsonStreamWriterAccumulator.m */; };
+		0BEA00CE17A3658100061BB6 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA00C017A3658100061BB6 /* SBJsonStreamWriterState.m */; };
+		0BEA00CF17A3658100061BB6 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA00C217A3658100061BB6 /* SBJsonWriter.m */; };
+		0BEA00D117A365AA00061BB6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA00D017A365AA00061BB6 /* SystemConfiguration.framework */; };
+		0BEA00D317A365AD00061BB6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA00D217A365AD00061BB6 /* QuartzCore.framework */; };
+		0BEA00D517A365BB00061BB6 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA00D417A365BB00061BB6 /* CoreTelephony.framework */; };
+		0BEA00D717A365C700061BB6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA00D617A365C700061BB6 /* libsqlite3.dylib */; };
+		0BEA00D917A365CE00061BB6 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA00D817A365CE00061BB6 /* libstdc++.dylib */; };
+		0BEA00DB17A365D400061BB6 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA00DA17A365D400061BB6 /* libz.1.2.5.dylib */; };
+		0BEA00DE17A3803200061BB6 /* MFPLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA00DD17A3803200061BB6 /* MFPLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,14 +69,47 @@
 		0BEA007E17A35FD600061BB6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		0BEA008017A35FD600061BB6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0BEA008317A35FD600061BB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		0BEA008517A35FD600061BB6 /* MFPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFPViewController.h; sourceTree = "<group>"; };
-		0BEA008617A35FD600061BB6 /* MFPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MFPViewController.m; sourceTree = "<group>"; };
 		0BEA008D17A35FD600061BB6 /* MyFootPrintTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFootPrintTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BEA008E17A35FD600061BB6 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		0BEA009617A35FD600061BB6 /* MyFootPrintTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyFootPrintTests-Info.plist"; sourceTree = "<group>"; };
 		0BEA009817A35FD600061BB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0BEA009A17A35FD600061BB6 /* MyFootPrintTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFootPrintTests.h; sourceTree = "<group>"; };
 		0BEA009B17A35FD600061BB6 /* MyFootPrintTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFootPrintTests.m; sourceTree = "<group>"; };
+		0BEA00A617A3658100061BB6 /* BDSocialLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BDSocialLogin.framework; sourceTree = "<group>"; };
+		0BEA00A717A3658100061BB6 /* BDSocialLoginSource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BDSocialLoginSource.bundle; sourceTree = "<group>"; };
+		0BEA00A917A3658100061BB6 /* sdkdef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sdkdef.h; sourceTree = "<group>"; };
+		0BEA00AA17A3658100061BB6 /* TencentOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TencentOAuth.h; sourceTree = "<group>"; };
+		0BEA00AB17A3658100061BB6 /* TencentOAuthObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TencentOAuthObject.h; sourceTree = "<group>"; };
+		0BEA00AC17A3658100061BB6 /* TencentOpenAPI */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = TencentOpenAPI; sourceTree = "<group>"; };
+		0BEA00AE17A3658100061BB6 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		0BEA00AF17A3658100061BB6 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		0BEA00B017A3658100061BB6 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		0BEA00B117A3658100061BB6 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		0BEA00B217A3658100061BB6 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		0BEA00B317A3658100061BB6 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		0BEA00B417A3658100061BB6 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		0BEA00B517A3658100061BB6 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		0BEA00B617A3658100061BB6 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		0BEA00B717A3658100061BB6 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		0BEA00B817A3658100061BB6 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		0BEA00B917A3658100061BB6 /* SBJsonStreamTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamTokeniser.h; sourceTree = "<group>"; };
+		0BEA00BA17A3658100061BB6 /* SBJsonStreamTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamTokeniser.m; sourceTree = "<group>"; };
+		0BEA00BB17A3658100061BB6 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		0BEA00BC17A3658100061BB6 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		0BEA00BD17A3658100061BB6 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		0BEA00BE17A3658100061BB6 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		0BEA00BF17A3658100061BB6 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		0BEA00C017A3658100061BB6 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		0BEA00C117A3658100061BB6 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		0BEA00C217A3658100061BB6 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		0BEA00D017A365AA00061BB6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0BEA00D217A365AD00061BB6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0BEA00D417A365BB00061BB6 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		0BEA00D617A365C700061BB6 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		0BEA00D817A365CE00061BB6 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		0BEA00DA17A365D400061BB6 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		0BEA00DC17A3803200061BB6 /* MFPLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPLoginViewController.h; sourceTree = "<group>"; };
+		0BEA00DD17A3803200061BB6 /* MFPLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +117,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BEA00DB17A365D400061BB6 /* libz.1.2.5.dylib in Frameworks */,
+				0BEA00D917A365CE00061BB6 /* libstdc++.dylib in Frameworks */,
+				0BEA00D717A365C700061BB6 /* libsqlite3.dylib in Frameworks */,
+				0BEA00D517A365BB00061BB6 /* CoreTelephony.framework in Frameworks */,
+				0BEA00D317A365AD00061BB6 /* QuartzCore.framework in Frameworks */,
+				0BEA00D117A365AA00061BB6 /* SystemConfiguration.framework in Frameworks */,
 				0BEA006B17A35FD600061BB6 /* UIKit.framework in Frameworks */,
 				0BEA006D17A35FD600061BB6 /* Foundation.framework in Frameworks */,
 				0BEA006F17A35FD600061BB6 /* CoreGraphics.framework in Frameworks */,
+				0BEA00C317A3658100061BB6 /* BDSocialLogin.framework in Frameworks */,
+				0BEA00C517A3658100061BB6 /* TencentOpenAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +147,13 @@
 		0BEA005E17A35FD600061BB6 = {
 			isa = PBXGroup;
 			children = (
+				0BEA00DA17A365D400061BB6 /* libz.1.2.5.dylib */,
+				0BEA00D817A365CE00061BB6 /* libstdc++.dylib */,
+				0BEA00D617A365C700061BB6 /* libsqlite3.dylib */,
+				0BEA00D417A365BB00061BB6 /* CoreTelephony.framework */,
+				0BEA00D217A365AD00061BB6 /* QuartzCore.framework */,
+				0BEA00D017A365AA00061BB6 /* SystemConfiguration.framework */,
+				0BEA00A517A3658100061BB6 /* BDSocialLogin */,
 				0BEA007017A35FD600061BB6 /* MyFootPrint */,
 				0BEA009417A35FD600061BB6 /* MyFootPrintTests */,
 				0BEA006917A35FD600061BB6 /* Frameworks */,
@@ -120,8 +187,8 @@
 				0BEA007917A35FD600061BB6 /* MFPAppDelegate.h */,
 				0BEA007A17A35FD600061BB6 /* MFPAppDelegate.m */,
 				0BEA008217A35FD600061BB6 /* MainStoryboard.storyboard */,
-				0BEA008517A35FD600061BB6 /* MFPViewController.h */,
-				0BEA008617A35FD600061BB6 /* MFPViewController.m */,
+				0BEA00DC17A3803200061BB6 /* MFPLoginViewController.h */,
+				0BEA00DD17A3803200061BB6 /* MFPLoginViewController.m */,
 				0BEA007117A35FD600061BB6 /* Supporting Files */,
 			);
 			path = MyFootPrint;
@@ -158,6 +225,56 @@
 				0BEA009717A35FD600061BB6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0BEA00A517A3658100061BB6 /* BDSocialLogin */ = {
+			isa = PBXGroup;
+			children = (
+				0BEA00A617A3658100061BB6 /* BDSocialLogin.framework */,
+				0BEA00A717A3658100061BB6 /* BDSocialLoginSource.bundle */,
+				0BEA00A817A3658100061BB6 /* QQ */,
+				0BEA00AD17A3658100061BB6 /* SBJson */,
+			);
+			path = BDSocialLogin;
+			sourceTree = "<group>";
+		};
+		0BEA00A817A3658100061BB6 /* QQ */ = {
+			isa = PBXGroup;
+			children = (
+				0BEA00A917A3658100061BB6 /* sdkdef.h */,
+				0BEA00AA17A3658100061BB6 /* TencentOAuth.h */,
+				0BEA00AB17A3658100061BB6 /* TencentOAuthObject.h */,
+				0BEA00AC17A3658100061BB6 /* TencentOpenAPI */,
+			);
+			path = QQ;
+			sourceTree = "<group>";
+		};
+		0BEA00AD17A3658100061BB6 /* SBJson */ = {
+			isa = PBXGroup;
+			children = (
+				0BEA00AE17A3658100061BB6 /* SBJson.h */,
+				0BEA00AF17A3658100061BB6 /* SBJsonParser.h */,
+				0BEA00B017A3658100061BB6 /* SBJsonParser.m */,
+				0BEA00B117A3658100061BB6 /* SBJsonStreamParser.h */,
+				0BEA00B217A3658100061BB6 /* SBJsonStreamParser.m */,
+				0BEA00B317A3658100061BB6 /* SBJsonStreamParserAccumulator.h */,
+				0BEA00B417A3658100061BB6 /* SBJsonStreamParserAccumulator.m */,
+				0BEA00B517A3658100061BB6 /* SBJsonStreamParserAdapter.h */,
+				0BEA00B617A3658100061BB6 /* SBJsonStreamParserAdapter.m */,
+				0BEA00B717A3658100061BB6 /* SBJsonStreamParserState.h */,
+				0BEA00B817A3658100061BB6 /* SBJsonStreamParserState.m */,
+				0BEA00B917A3658100061BB6 /* SBJsonStreamTokeniser.h */,
+				0BEA00BA17A3658100061BB6 /* SBJsonStreamTokeniser.m */,
+				0BEA00BB17A3658100061BB6 /* SBJsonStreamWriter.h */,
+				0BEA00BC17A3658100061BB6 /* SBJsonStreamWriter.m */,
+				0BEA00BD17A3658100061BB6 /* SBJsonStreamWriterAccumulator.h */,
+				0BEA00BE17A3658100061BB6 /* SBJsonStreamWriterAccumulator.m */,
+				0BEA00BF17A3658100061BB6 /* SBJsonStreamWriterState.h */,
+				0BEA00C017A3658100061BB6 /* SBJsonStreamWriterState.m */,
+				0BEA00C117A3658100061BB6 /* SBJsonWriter.h */,
+				0BEA00C217A3658100061BB6 /* SBJsonWriter.m */,
+			);
+			path = SBJson;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +354,7 @@
 				0BEA007F17A35FD600061BB6 /* Default@2x.png in Resources */,
 				0BEA008117A35FD600061BB6 /* Default-568h@2x.png in Resources */,
 				0BEA008417A35FD600061BB6 /* MainStoryboard.storyboard in Resources */,
+				0BEA00C417A3658100061BB6 /* BDSocialLoginSource.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +391,17 @@
 			files = (
 				0BEA007717A35FD600061BB6 /* main.m in Sources */,
 				0BEA007B17A35FD600061BB6 /* MFPAppDelegate.m in Sources */,
-				0BEA008717A35FD600061BB6 /* MFPViewController.m in Sources */,
+				0BEA00C617A3658100061BB6 /* SBJsonParser.m in Sources */,
+				0BEA00C717A3658100061BB6 /* SBJsonStreamParser.m in Sources */,
+				0BEA00C817A3658100061BB6 /* SBJsonStreamParserAccumulator.m in Sources */,
+				0BEA00C917A3658100061BB6 /* SBJsonStreamParserAdapter.m in Sources */,
+				0BEA00CA17A3658100061BB6 /* SBJsonStreamParserState.m in Sources */,
+				0BEA00CB17A3658100061BB6 /* SBJsonStreamTokeniser.m in Sources */,
+				0BEA00CC17A3658100061BB6 /* SBJsonStreamWriter.m in Sources */,
+				0BEA00CD17A3658100061BB6 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				0BEA00CE17A3658100061BB6 /* SBJsonStreamWriterState.m in Sources */,
+				0BEA00CF17A3658100061BB6 /* SBJsonWriter.m in Sources */,
+				0BEA00DE17A3803200061BB6 /* MFPLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,9 +510,18 @@
 		0BEA00A017A35FD600061BB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/BDSocialLogin\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyFootPrint/MyFootPrint-Prefix.pch";
 				INFOPLIST_FILE = "MyFootPrint/MyFootPrint-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/BDSocialLogin/QQ\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -393,9 +530,18 @@
 		0BEA00A117A35FD600061BB6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/BDSocialLogin\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyFootPrint/MyFootPrint-Prefix.pch";
 				INFOPLIST_FILE = "MyFootPrint/MyFootPrint-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/BDSocialLogin/QQ\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

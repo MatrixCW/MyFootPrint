@@ -7,12 +7,23 @@
 //
 
 #import "MFPAppDelegate.h"
+#import <BDSocialLogin/BDSocialLoginSDK.h>
 
 @implementation MFPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+
+    
+    NSArray *platforms = [NSArray arrayWithObjects:kBD_SOCIAL_LOGIN_PLATFORM_SINAWEIBO,
+                                                   kBD_SOCIAL_LOGIN_PLATFORM_RENREN,nil];
+    
+    [BDSocialLoginSDK registerApiKey:@"3lgbyRaFn9B7jgoMDI12v8rC" andSupportPlatforms:platforms];
+
+    [BDSocialLoginSDK enableSinaWeiboSSOWithAppId:@"4100031671"];
+
+    
     return YES;
 }
 							
@@ -41,6 +52,11 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    return [BDSocialLoginSDK handleOpenURL:url];
 }
 
 @end
