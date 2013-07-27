@@ -23,6 +23,7 @@
      
                                                     success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
                                                         NSString *queryStatus = [JSON objectForKey:@"status"];
+                                                        
                                                         if([queryStatus isEqualToString:@"OK"]){
                                                             
                                                             NSDictionary* queryResults = [JSON objectForKey:@"result"];
@@ -47,6 +48,8 @@
                                                             
                                                             [alert show];
                                                             
+                                                            [self.myDelegate copyQueryResults:Nil];
+                                                            
                                                         }
                                                         
                         
@@ -58,6 +61,8 @@
                                                                                                     delegate:nil
                                                                                            cancelButtonTitle:@"OK" otherButtonTitles:nil];
                                                         [av show];
+                                                        
+                                                        [self.myDelegate copyQueryResults:Nil];
                                                     }];
     
     

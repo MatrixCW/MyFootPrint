@@ -13,65 +13,151 @@
 
 @interface MFPUploadPhotoViewController ()
 
+@property ALAssetsLibrary* myLibrary;
+
 @end
 
-@implementation MFPUploadPhotoViewController{
-    NSMutableArray *assetGroups;
-}
-
+@implementation MFPUploadPhotoViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    UIImage *backgroundImage = [UIImage imageNamed:UPLOAD_PHOTO_VC_BG];
-    UIImageView *backGroundView = [[UIImageView alloc] initWithImage:backgroundImage];
-    self.view = backGroundView;
+    //UIImage *backgroundImage = [UIImage imageNamed:UPLOAD_PHOTO_VC_BG];
+    //UIImageView *backGroundView = [[UIImageView alloc] initWithImage:backgroundImage];
+    //self.view = backGroundView;
     
     //[self selectPhoto:Nil];
-    assetGroups = [[NSMutableArray alloc] init];
-    
-    MFPQueryGeolocation *tempQuery  = [[MFPQueryGeolocation alloc] init];
+    self.alAssetsArray = [[NSMutableArray alloc] init];
+    self.queriedGeoData = [[NSMutableArray alloc] init];
+    self.provincesAndPhotos = [[NSMutableDictionary alloc] initWithCapacity:34];
+    self.count = 0;
+    self.currentProcessingIndex = 0;
+    [self.displayProvinces registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
     
     
     void (^assetEnumerator)
     (ALAsset *, NSUInteger, BOOL *) = ^(ALAsset *result, NSUInteger index, BOOL *stop) {
         if(result != nil) {
-            CLLocation *tempLocation = (CLLocation*)[result valueForProperty:ALAssetPropertyLocation];
-            [tempQuery getGeolocation:CGPointMake(tempLocation.coordinate.latitude, tempLocation.coordinate.longitude)];
+            
+            if([result valueForProperty:ALAssetTypePhoto] && [result valueForProperty:ALAssetPropertyLocation] != Nil){
+                self.count++;
+                NSLog(@"%i",self.count);
+                [self.alAssetsArray addObject:result];
+                
+            }
+            
         }
     };
     
     void (^assetGroupEnumerator)(ALAssetsGroup *, BOOL *) = ^(ALAssetsGroup *group, BOOL *stop){
         
         if(group != nil) {
-            NSLog(@"hahahahahaha");
             [group enumerateAssetsUsingBlock:assetEnumerator];
+        }
+        else{
+            
+            [self getPhotoGeoData];
         }
     };
     
     
                                          
                                          
-    ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
+    self.myLibrary = [[ALAssetsLibrary alloc] init];
     NSUInteger groupTypes = ALAssetsGroupAll;
                                          
-    [library enumerateGroupsWithTypes:groupTypes
+    [self.myLibrary enumerateGroupsWithTypes:groupTypes
                            usingBlock:assetGroupEnumerator
                          failureBlock:^(NSError *error) {NSLog(@"A problem occurred");}];
+    
 }
 
-- (void)selectPhoto:(UIButton *)sender {
+-(void)getPhotoGeoData{
     
-    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-    picker.delegate = self;
-    picker.allowsEditing = YES;
-    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    if(self.currentProcessingIndex >= self.alAssetsArray.count){
+        [self loadImages];
+        return;
+    }
     
-    [self presentViewController:picker animated:YES completion:NULL];
+    MFPQueryGeolocation *geoInfoQuerier = [[MFPQueryGeolocation alloc] init];
+    geoInfoQuerier.myDelegate = self;
+    ALAsset *currentProcessingAsset = [self.alAssetsArray objectAtIndex:self.currentProcessingIndex];
+    CLLocation *tempLocation = (CLLocation*)[currentProcessingAsset valueForProperty:ALAssetPropertyLocation];
+    [geoInfoQuerier getGeolocation:CGPointMake(tempLocation.coordinate.latitude, tempLocation.coordinate.longitude)];
     
     
+}
+
+-(void)loadImages{
+    
+    assert(self.alAssetsArray.count == self.queriedGeoData.count);
+    
+    for(int i = 0; i < self.alAssetsArray.count;i++){
+        NSString *province = [self.queriedGeoData objectAtIndex:i];
+        
+        if([self.provincesAndPhotos objectForKey:province] == Nil){
+            NSMutableArray *array = [NSMutableArray array];
+            [array addObject:[self.alAssetsArray objectAtIndex:i]];
+            [self.provincesAndPhotos setObject:array forKey:province];
+        }
+        else{
+            NSMutableArray *array = [self.provincesAndPhotos objectForKey:province];
+            [array addObject:[self.alAssetsArray objectAtIndex:i]];
+        }
+    }
+    
+    NSLog(@"%@",self.alAssetsArray);
+    [self showProvincesInTableView];
+}
+
+
+-(void)showProvincesInTableView{
+    
+    self.displayProvinces.delegate = self;
+    self.displayProvinces.dataSource = self;
+    
+}
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
+    
+    return 1;
+    
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    
+    return 6;
+    
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UICollectionViewCell *cell =[collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor yellowColor];
+    
+    return cell;
+    
+}
+
+-(void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+}
+
+//-(CGSize)col
+-(void)copyQueryResults:(NSString*)result{
+    
+    if(result == Nil){
+        [self.alAssetsArray removeObjectAtIndex:self.currentProcessingIndex];
+        
+    }
+    else{
+        self.currentProcessingIndex ++;
+        [self.queriedGeoData addObject:result];
+        
+    }
+    [self getPhotoGeoData];
 }
 
 
