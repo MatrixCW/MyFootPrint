@@ -57,6 +57,21 @@
 		0BEA010A17A3B1B000061BB6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA010917A3B1B000061BB6 /* Security.framework */; };
 		0BEA010C17A3B82900061BB6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA010B17A3B82900061BB6 /* MobileCoreServices.framework */; };
 		0BEA010D17A3B83100061BB6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA00D017A365AA00061BB6 /* SystemConfiguration.framework */; };
+		4B0D832217A3AA8900E23681 /* MFPFootPrintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0D832117A3AA8900E23681 /* MFPFootPrintViewController.m */; };
+		4B0D832817A3AACC00E23681 /* ALRadialButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0D832517A3AACC00E23681 /* ALRadialButton.m */; };
+		4B0D832917A3AACC00E23681 /* ALRadialMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0D832717A3AACC00E23681 /* ALRadialMenu.m */; };
+		4B0D833017A3AB4000E23681 /* addthis500.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B0D832B17A3AB4000E23681 /* addthis500.png */; };
+		4B0D833117A3AB4000E23681 /* dribbble.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B0D832C17A3AB4000E23681 /* dribbble.png */; };
+		4B0D833217A3AB4000E23681 /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B0D832D17A3AB4000E23681 /* email.png */; };
+		4B0D833317A3AB4000E23681 /* facebook500.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B0D832E17A3AB4000E23681 /* facebook500.png */; };
+		4B0D833417A3AB4000E23681 /* googleplus-revised.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B0D832F17A3AB4000E23681 /* googleplus-revised.png */; };
+		4B37E82417A3B82B00C54C85 /* bg_intro.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B37E81D17A3B82B00C54C85 /* bg_intro.png */; };
+		4B37E82517A3B82B00C54C85 /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B37E81E17A3B82B00C54C85 /* header.png */; };
+		4B37E82617A3B82B00C54C85 /* qq.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B37E81F17A3B82B00C54C85 /* qq.png */; };
+		4B37E82717A3B82B00C54C85 /* renren.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B37E82017A3B82B00C54C85 /* renren.png */; };
+		4B37E82817A3B82B00C54C85 /* rr_login.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B37E82117A3B82B00C54C85 /* rr_login.png */; };
+		4B37E82917A3B82B00C54C85 /* wb_login.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B37E82217A3B82B00C54C85 /* wb_login.png */; };
+		4B37E82A17A3B82B00C54C85 /* weibo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B37E82317A3B82B00C54C85 /* weibo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +168,24 @@
 		0BEA010717A3B1AB00061BB6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		0BEA010917A3B1B000061BB6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		0BEA010B17A3B82900061BB6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		4B0D832017A3AA8900E23681 /* MFPFootPrintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPFootPrintViewController.h; sourceTree = "<group>"; };
+		4B0D832117A3AA8900E23681 /* MFPFootPrintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPFootPrintViewController.m; sourceTree = "<group>"; };
+		4B0D832417A3AACC00E23681 /* ALRadialButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALRadialButton.h; sourceTree = "<group>"; };
+		4B0D832517A3AACC00E23681 /* ALRadialButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALRadialButton.m; sourceTree = "<group>"; };
+		4B0D832617A3AACC00E23681 /* ALRadialMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALRadialMenu.h; sourceTree = "<group>"; };
+		4B0D832717A3AACC00E23681 /* ALRadialMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALRadialMenu.m; sourceTree = "<group>"; };
+		4B0D832B17A3AB4000E23681 /* addthis500.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addthis500.png; sourceTree = "<group>"; };
+		4B0D832C17A3AB4000E23681 /* dribbble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dribbble.png; sourceTree = "<group>"; };
+		4B0D832D17A3AB4000E23681 /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
+		4B0D832E17A3AB4000E23681 /* facebook500.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook500.png; sourceTree = "<group>"; };
+		4B0D832F17A3AB4000E23681 /* googleplus-revised.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "googleplus-revised.png"; sourceTree = "<group>"; };
+		4B37E81D17A3B82B00C54C85 /* bg_intro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_intro.png; sourceTree = "<group>"; };
+		4B37E81E17A3B82B00C54C85 /* header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header.png; sourceTree = "<group>"; };
+		4B37E81F17A3B82B00C54C85 /* qq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qq.png; sourceTree = "<group>"; };
+		4B37E82017A3B82B00C54C85 /* renren.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = renren.png; sourceTree = "<group>"; };
+		4B37E82117A3B82B00C54C85 /* rr_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rr_login.png; sourceTree = "<group>"; };
+		4B37E82217A3B82B00C54C85 /* wb_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wb_login.png; sourceTree = "<group>"; };
+		4B37E82317A3B82B00C54C85 /* weibo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weibo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +267,8 @@
 		0BEA007017A35FD600061BB6 /* MyFootPrint */ = {
 			isa = PBXGroup;
 			children = (
+				4B0D832A17A3AAFD00E23681 /* images */,
+				4B0D832317A3AACC00E23681 /* ALRadial */,
 				0BEA007917A35FD600061BB6 /* MFPAppDelegate.h */,
 				0BEA007A17A35FD600061BB6 /* MFPAppDelegate.m */,
 				0BEA008217A35FD600061BB6 /* MainStoryboard.storyboard */,
@@ -244,6 +279,8 @@
 				0BEA00DC17A3803200061BB6 /* MFPLoginViewController.h */,
 				0BEA00DD17A3803200061BB6 /* MFPLoginViewController.m */,
 				0BEA00DF17A38E3700061BB6 /* MFPConstants.h */,
+				4B0D832017A3AA8900E23681 /* MFPFootPrintViewController.h */,
+				4B0D832117A3AA8900E23681 /* MFPFootPrintViewController.m */,
 				0BEA007117A35FD600061BB6 /* Supporting Files */,
 			);
 			path = MyFootPrint;
@@ -359,6 +396,37 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
+		4B0D832317A3AACC00E23681 /* ALRadial */ = {
+			isa = PBXGroup;
+			children = (
+				4B0D832417A3AACC00E23681 /* ALRadialButton.h */,
+				4B0D832517A3AACC00E23681 /* ALRadialButton.m */,
+				4B0D832617A3AACC00E23681 /* ALRadialMenu.h */,
+				4B0D832717A3AACC00E23681 /* ALRadialMenu.m */,
+			);
+			path = ALRadial;
+			sourceTree = "<group>";
+		};
+		4B0D832A17A3AAFD00E23681 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				4B0D832B17A3AB4000E23681 /* addthis500.png */,
+				4B37E81D17A3B82B00C54C85 /* bg_intro.png */,
+				4B37E81E17A3B82B00C54C85 /* header.png */,
+				4B37E81F17A3B82B00C54C85 /* qq.png */,
+				4B37E82017A3B82B00C54C85 /* renren.png */,
+				4B37E82117A3B82B00C54C85 /* rr_login.png */,
+				4B37E82217A3B82B00C54C85 /* wb_login.png */,
+				4B37E82317A3B82B00C54C85 /* weibo.png */,
+				4B0D832C17A3AB4000E23681 /* dribbble.png */,
+				4B0D832D17A3AB4000E23681 /* email.png */,
+				4B0D832E17A3AB4000E23681 /* facebook500.png */,
+				4B0D832F17A3AB4000E23681 /* googleplus-revised.png */,
+			);
+			name = images;
+			path = MyFootPrintTests;
+			sourceTree = SOURCE_ROOT;
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -437,7 +505,19 @@
 				0BEA008117A35FD600061BB6 /* Default-568h@2x.png in Resources */,
 				0BEA008417A35FD600061BB6 /* MainStoryboard.storyboard in Resources */,
 				0BEA00C417A3658100061BB6 /* BDSocialLoginSource.bundle in Resources */,
+				4B0D833017A3AB4000E23681 /* addthis500.png in Resources */,
+				4B0D833117A3AB4000E23681 /* dribbble.png in Resources */,
+				4B0D833217A3AB4000E23681 /* email.png in Resources */,
+				4B0D833317A3AB4000E23681 /* facebook500.png in Resources */,
+				4B0D833417A3AB4000E23681 /* googleplus-revised.png in Resources */,
 				0BEA00E317A39D4D00061BB6 /* upload_bg.png in Resources */,
+				4B37E82417A3B82B00C54C85 /* bg_intro.png in Resources */,
+				4B37E82517A3B82B00C54C85 /* header.png in Resources */,
+				4B37E82617A3B82B00C54C85 /* qq.png in Resources */,
+				4B37E82717A3B82B00C54C85 /* renren.png in Resources */,
+				4B37E82817A3B82B00C54C85 /* rr_login.png in Resources */,
+				4B37E82917A3B82B00C54C85 /* wb_login.png in Resources */,
+				4B37E82A17A3B82B00C54C85 /* weibo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +565,9 @@
 				0BEA00CE17A3658100061BB6 /* SBJsonStreamWriterState.m in Sources */,
 				0BEA00CF17A3658100061BB6 /* SBJsonWriter.m in Sources */,
 				0BEA00DE17A3803200061BB6 /* MFPLoginViewController.m in Sources */,
+				4B0D832217A3AA8900E23681 /* MFPFootPrintViewController.m in Sources */,
+				4B0D832817A3AACC00E23681 /* ALRadialButton.m in Sources */,
+				4B0D832917A3AACC00E23681 /* ALRadialMenu.m in Sources */,
 				0BEA00E617A39D7400061BB6 /* MFPUploadPhotoViewController.m in Sources */,
 				0BEA00FB17A3ADEB00061BB6 /* AFHTTPClient.m in Sources */,
 				0BEA00FC17A3ADEB00061BB6 /* AFHTTPRequestOperation.m in Sources */,
