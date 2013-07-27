@@ -42,6 +42,8 @@
 		0BEA00D917A365CE00061BB6 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA00D817A365CE00061BB6 /* libstdc++.dylib */; };
 		0BEA00DB17A365D400061BB6 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA00DA17A365D400061BB6 /* libz.1.2.5.dylib */; };
 		0BEA00DE17A3803200061BB6 /* MFPLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA00DD17A3803200061BB6 /* MFPLoginViewController.m */; };
+		4B0D831E17A39E3200E23681 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0D831B17A39E3200E23681 /* Constants.m */; };
+		4B0D831F17A39E3200E23681 /* KYCircleMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0D831D17A39E3200E23681 /* KYCircleMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +112,10 @@
 		0BEA00DA17A365D400061BB6 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		0BEA00DC17A3803200061BB6 /* MFPLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPLoginViewController.h; sourceTree = "<group>"; };
 		0BEA00DD17A3803200061BB6 /* MFPLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPLoginViewController.m; sourceTree = "<group>"; };
+		4B0D831A17A39E3200E23681 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		4B0D831B17A39E3200E23681 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		4B0D831C17A39E3200E23681 /* KYCircleMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYCircleMenu.h; sourceTree = "<group>"; };
+		4B0D831D17A39E3200E23681 /* KYCircleMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYCircleMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +190,7 @@
 		0BEA007017A35FD600061BB6 /* MyFootPrint */ = {
 			isa = PBXGroup;
 			children = (
+				4B0D831917A39E3200E23681 /* KYCircleMenu */,
 				0BEA007917A35FD600061BB6 /* MFPAppDelegate.h */,
 				0BEA007A17A35FD600061BB6 /* MFPAppDelegate.m */,
 				0BEA008217A35FD600061BB6 /* MainStoryboard.storyboard */,
@@ -275,6 +282,17 @@
 				0BEA00C217A3658100061BB6 /* SBJsonWriter.m */,
 			);
 			path = SBJson;
+			sourceTree = "<group>";
+		};
+		4B0D831917A39E3200E23681 /* KYCircleMenu */ = {
+			isa = PBXGroup;
+			children = (
+				4B0D831A17A39E3200E23681 /* Constants.h */,
+				4B0D831B17A39E3200E23681 /* Constants.m */,
+				4B0D831C17A39E3200E23681 /* KYCircleMenu.h */,
+				4B0D831D17A39E3200E23681 /* KYCircleMenu.m */,
+			);
+			path = KYCircleMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,6 +420,8 @@
 				0BEA00CE17A3658100061BB6 /* SBJsonStreamWriterState.m in Sources */,
 				0BEA00CF17A3658100061BB6 /* SBJsonWriter.m in Sources */,
 				0BEA00DE17A3803200061BB6 /* MFPLoginViewController.m in Sources */,
+				4B0D831E17A39E3200E23681 /* Constants.m in Sources */,
+				4B0D831F17A39E3200E23681 /* KYCircleMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,6 +620,7 @@
 				0BEA00A117A35FD600061BB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0BEA00A217A35FD600061BB6 /* Build configuration list for PBXNativeTarget "MyFootPrintTests" */ = {
 			isa = XCConfigurationList;
@@ -608,6 +629,7 @@
 				0BEA00A417A35FD600061BB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
