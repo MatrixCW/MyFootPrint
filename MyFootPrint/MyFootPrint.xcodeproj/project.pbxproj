@@ -110,6 +110,7 @@
 		0BEA00DA17A365D400061BB6 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		0BEA00DC17A3803200061BB6 /* MFPLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPLoginViewController.h; sourceTree = "<group>"; };
 		0BEA00DD17A3803200061BB6 /* MFPLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPLoginViewController.m; sourceTree = "<group>"; };
+		0BEA00DF17A38E3700061BB6 /* MFPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPConstants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +190,7 @@
 				0BEA008217A35FD600061BB6 /* MainStoryboard.storyboard */,
 				0BEA00DC17A3803200061BB6 /* MFPLoginViewController.h */,
 				0BEA00DD17A3803200061BB6 /* MFPLoginViewController.m */,
+				0BEA00DF17A38E3700061BB6 /* MFPConstants.h */,
 				0BEA007117A35FD600061BB6 /* Supporting Files */,
 			);
 			path = MyFootPrint;
