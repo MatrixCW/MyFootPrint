@@ -95,4 +95,14 @@
     }
     
 }
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    UITouch *touch = [[event allTouches] anyObject];
+    if ([touch view].tag == 0) {
+        [self.footPrintMenu itemsWillDisapearIntoButton:self.footPrintButton];
+    }
+    
+    [super touchesBegan:touches withEvent:event];
+}
 @end
