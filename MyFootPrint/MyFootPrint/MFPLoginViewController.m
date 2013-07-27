@@ -86,8 +86,7 @@
             }
             
             [self writeToTextFile:self.userInfo];
-            [self goToNextStage];
-     
+            
         } else {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"失败" message:[NSString stringWithFormat:@"%@获取信息失败\n error code:%d;\n error message:%@",platformType,error.code,[error localizedDescription]] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
             [alert show];
@@ -234,9 +233,6 @@
     [self dismissViewControllerAnimated:YES completion:Nil];
 }
 
--(void)goToNextStage{
-    [self performSegueWithIdentifier:SEGUE_FROM_LOGIN_TO_UPLOADING sender:self];
-}
 
 -(void)clear{
     

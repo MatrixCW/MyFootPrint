@@ -9,8 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "MFPQueryGeolocation.h"
 
-@interface MFPUploadPhotoViewController : UIViewController<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface MFPUploadPhotoViewController : UIViewController<QueryGeoInfoFinished,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
 @property UIImageView *selectedImage;
+@property int count;
+@property int currentProcessingIndex;
+@property NSMutableArray *alAssetsArray;
+@property NSMutableArray *queriedGeoData;
+@property NSMutableDictionary *provincesAndPhotos;
+@property (weak, nonatomic) IBOutlet UICollectionView *displayProvinces;
 
 @end

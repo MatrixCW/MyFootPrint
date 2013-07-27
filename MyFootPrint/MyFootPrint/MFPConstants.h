@@ -13,7 +13,6 @@
 [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0],@"/userInfo.txt"]\
 
 #define UPLOAD_PHOTO_VC_BG @"upload_bg.png"
-#define SEGUE_FROM_LOGIN_TO_UPLOADING @"SEGUE_TO_UPLOAD_VC"
 #define FOOT_PRINT_BUTTON_SIZE 55
 #define FOOT_PRINT_BUTTON_RADIUS 70
 @interface MFPConstants : NSObject
