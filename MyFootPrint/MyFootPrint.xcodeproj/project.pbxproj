@@ -157,6 +157,7 @@
 		4B605C8A17A409020047A956 /* 8green.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B605C4C17A409020047A956 /* 8green.png */; };
 		4B605C8B17A409020047A956 /* 9green.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B605C4D17A409020047A956 /* 9green.png */; };
 		4B605CBE17A442240047A956 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B605CBD17A442240047A956 /* iCarousel.m */; };
+		4B6EEC2F17A445D700F17091 /* MFPCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6EEC2E17A445D700F17091 /* MFPCardViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -361,6 +362,8 @@
 		4B605C4D17A409020047A956 /* 9green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9green.png; sourceTree = "<group>"; };
 		4B605CBC17A442240047A956 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		4B605CBD17A442240047A956 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		4B6EEC2D17A445D700F17091 /* MFPCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPCardViewController.h; sourceTree = "<group>"; };
+		4B6EEC2E17A445D700F17091 /* MFPCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPCardViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -464,6 +467,8 @@
 				0BEA00DD17A3803200061BB6 /* MFPLoginViewController.m */,
 				4B0D832017A3AA8900E23681 /* MFPFootPrintViewController.h */,
 				4B0D832117A3AA8900E23681 /* MFPFootPrintViewController.m */,
+				4B6EEC2D17A445D700F17091 /* MFPCardViewController.h */,
+				4B6EEC2E17A445D700F17091 /* MFPCardViewController.m */,
 				0BC4CA7617A44126003A4AE5 /* MFPImageCell.h */,
 				0BC4CA7717A44126003A4AE5 /* MFPImageCell.m */,
 				0BEA00DF17A38E3700061BB6 /* MFPConstants.h */,
@@ -975,6 +980,7 @@
 				4B37E83317A3E21A00C54C85 /* dataUtil.m in Sources */,
 				4B605CBE17A442240047A956 /* iCarousel.m in Sources */,
 				0BC4CA7817A44126003A4AE5 /* MFPImageCell.m in Sources */,
+				4B6EEC2F17A445D700F17091 /* MFPCardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
