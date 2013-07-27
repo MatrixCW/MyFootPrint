@@ -42,6 +42,14 @@
 		0BEA00D917A365CE00061BB6 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA00D817A365CE00061BB6 /* libstdc++.dylib */; };
 		0BEA00DB17A365D400061BB6 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEA00DA17A365D400061BB6 /* libz.1.2.5.dylib */; };
 		0BEA00DE17A3803200061BB6 /* MFPLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA00DD17A3803200061BB6 /* MFPLoginViewController.m */; };
+		4B0D832217A3AA8900E23681 /* MFPFootPrintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0D832117A3AA8900E23681 /* MFPFootPrintViewController.m */; };
+		4B0D832817A3AACC00E23681 /* ALRadialButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0D832517A3AACC00E23681 /* ALRadialButton.m */; };
+		4B0D832917A3AACC00E23681 /* ALRadialMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0D832717A3AACC00E23681 /* ALRadialMenu.m */; };
+		4B0D833017A3AB4000E23681 /* addthis500.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B0D832B17A3AB4000E23681 /* addthis500.png */; };
+		4B0D833117A3AB4000E23681 /* dribbble.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B0D832C17A3AB4000E23681 /* dribbble.png */; };
+		4B0D833217A3AB4000E23681 /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B0D832D17A3AB4000E23681 /* email.png */; };
+		4B0D833317A3AB4000E23681 /* facebook500.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B0D832E17A3AB4000E23681 /* facebook500.png */; };
+		4B0D833417A3AB4000E23681 /* googleplus-revised.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B0D832F17A3AB4000E23681 /* googleplus-revised.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +119,17 @@
 		0BEA00DC17A3803200061BB6 /* MFPLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPLoginViewController.h; sourceTree = "<group>"; };
 		0BEA00DD17A3803200061BB6 /* MFPLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPLoginViewController.m; sourceTree = "<group>"; };
 		0BEA00DF17A38E3700061BB6 /* MFPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPConstants.h; sourceTree = "<group>"; };
+		4B0D832017A3AA8900E23681 /* MFPFootPrintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPFootPrintViewController.h; sourceTree = "<group>"; };
+		4B0D832117A3AA8900E23681 /* MFPFootPrintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPFootPrintViewController.m; sourceTree = "<group>"; };
+		4B0D832417A3AACC00E23681 /* ALRadialButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALRadialButton.h; sourceTree = "<group>"; };
+		4B0D832517A3AACC00E23681 /* ALRadialButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALRadialButton.m; sourceTree = "<group>"; };
+		4B0D832617A3AACC00E23681 /* ALRadialMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALRadialMenu.h; sourceTree = "<group>"; };
+		4B0D832717A3AACC00E23681 /* ALRadialMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALRadialMenu.m; sourceTree = "<group>"; };
+		4B0D832B17A3AB4000E23681 /* addthis500.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addthis500.png; sourceTree = "<group>"; };
+		4B0D832C17A3AB4000E23681 /* dribbble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dribbble.png; sourceTree = "<group>"; };
+		4B0D832D17A3AB4000E23681 /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
+		4B0D832E17A3AB4000E23681 /* facebook500.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook500.png; sourceTree = "<group>"; };
+		4B0D832F17A3AB4000E23681 /* googleplus-revised.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "googleplus-revised.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,12 +204,16 @@
 		0BEA007017A35FD600061BB6 /* MyFootPrint */ = {
 			isa = PBXGroup;
 			children = (
+				4B0D832A17A3AAFD00E23681 /* images */,
+				4B0D832317A3AACC00E23681 /* ALRadial */,
 				0BEA007917A35FD600061BB6 /* MFPAppDelegate.h */,
 				0BEA007A17A35FD600061BB6 /* MFPAppDelegate.m */,
 				0BEA008217A35FD600061BB6 /* MainStoryboard.storyboard */,
 				0BEA00DC17A3803200061BB6 /* MFPLoginViewController.h */,
 				0BEA00DD17A3803200061BB6 /* MFPLoginViewController.m */,
 				0BEA00DF17A38E3700061BB6 /* MFPConstants.h */,
+				4B0D832017A3AA8900E23681 /* MFPFootPrintViewController.h */,
+				4B0D832117A3AA8900E23681 /* MFPFootPrintViewController.m */,
 				0BEA007117A35FD600061BB6 /* Supporting Files */,
 			);
 			path = MyFootPrint;
@@ -279,6 +302,30 @@
 			path = SBJson;
 			sourceTree = "<group>";
 		};
+		4B0D832317A3AACC00E23681 /* ALRadial */ = {
+			isa = PBXGroup;
+			children = (
+				4B0D832417A3AACC00E23681 /* ALRadialButton.h */,
+				4B0D832517A3AACC00E23681 /* ALRadialButton.m */,
+				4B0D832617A3AACC00E23681 /* ALRadialMenu.h */,
+				4B0D832717A3AACC00E23681 /* ALRadialMenu.m */,
+			);
+			path = ALRadial;
+			sourceTree = "<group>";
+		};
+		4B0D832A17A3AAFD00E23681 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				4B0D832B17A3AB4000E23681 /* addthis500.png */,
+				4B0D832C17A3AB4000E23681 /* dribbble.png */,
+				4B0D832D17A3AB4000E23681 /* email.png */,
+				4B0D832E17A3AB4000E23681 /* facebook500.png */,
+				4B0D832F17A3AB4000E23681 /* googleplus-revised.png */,
+			);
+			name = images;
+			path = MyFootPrintTests;
+			sourceTree = SOURCE_ROOT;
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -357,6 +404,11 @@
 				0BEA008117A35FD600061BB6 /* Default-568h@2x.png in Resources */,
 				0BEA008417A35FD600061BB6 /* MainStoryboard.storyboard in Resources */,
 				0BEA00C417A3658100061BB6 /* BDSocialLoginSource.bundle in Resources */,
+				4B0D833017A3AB4000E23681 /* addthis500.png in Resources */,
+				4B0D833117A3AB4000E23681 /* dribbble.png in Resources */,
+				4B0D833217A3AB4000E23681 /* email.png in Resources */,
+				4B0D833317A3AB4000E23681 /* facebook500.png in Resources */,
+				4B0D833417A3AB4000E23681 /* googleplus-revised.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +456,9 @@
 				0BEA00CE17A3658100061BB6 /* SBJsonStreamWriterState.m in Sources */,
 				0BEA00CF17A3658100061BB6 /* SBJsonWriter.m in Sources */,
 				0BEA00DE17A3803200061BB6 /* MFPLoginViewController.m in Sources */,
+				4B0D832217A3AA8900E23681 /* MFPFootPrintViewController.m in Sources */,
+				4B0D832817A3AACC00E23681 /* ALRadialButton.m in Sources */,
+				4B0D832917A3AACC00E23681 /* ALRadialMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
