@@ -11,5 +11,7 @@
 @interface MFPFootPrintViewController : UIViewController<ALRadialMenuDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *footPrintButton;
 - (IBAction)footPrintButtonPressed:(id)sender;
+- (IBAction)shareButtonPressed:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *cameraButtonPressed;
 @property (strong, nonatomic) ALRadialMenu *footPrintMenu;
 @end
