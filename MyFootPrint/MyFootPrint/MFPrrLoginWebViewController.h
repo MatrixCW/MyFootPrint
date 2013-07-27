@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MFPLoginViewController.h"
 
 @interface MFPrrLoginWebViewController : UIViewController<UIWebViewDelegate, NSURLConnectionDelegate>
+
+@property id<dismissLoginViewController> myDelegate;
 @property (weak, nonatomic) IBOutlet UIWebView *loginView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
 

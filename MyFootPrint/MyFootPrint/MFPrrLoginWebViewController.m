@@ -69,7 +69,7 @@
         [AFJSONRequestOperation JSONRequestOperationWithRequest:request
          
                                                         success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
-                                                            [self dismissViewControllerAnimated:YES completion:nil];
+                                                            [self dismissViewControllerAnimated:YES completion:^{[self.myDelegate dismissModalLoginViewController];}];
                                                             
                                                             NSLog(@"Token %@", [JSON objectForKey:@"token"]);
                                                             NSLog(@"uid %@", [JSON objectForKey:@"uid"]);

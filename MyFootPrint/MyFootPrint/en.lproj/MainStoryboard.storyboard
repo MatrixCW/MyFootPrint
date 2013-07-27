@@ -9,7 +9,7 @@
             <objects>
                 <viewController storyboardIdentifier="FootPrint" id="MCW-Kn-huR" customClass="MFPFootPrintViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RnY-IY-aNN">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTv-QC-sBb">
@@ -39,12 +39,12 @@
                     <navigationItem key="navigationItem" id="tX1-aP-5nf"/>
                     <connections>
                         <outlet property="footPrintButton" destination="WTv-QC-sBb" id="zg8-2W-L1S"/>
-                        <segue destination="2" kind="modal" id="3cn-2v-oyn"/>
+                        <segue destination="2" kind="modal" identifier="POP_LOGIN_VC" id="3cn-2v-oyn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jdV-Lh-T1V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="702" y="23"/>
+            <point key="canvasLocation" x="-116" y="23"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="5">
@@ -134,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1254" y="-9"/>
+            <point key="canvasLocation" x="474" y="23"/>
         </scene>
         <!--Prr Login Web View Controller-->
         <scene sceneID="Fxw-wd-8IA">
@@ -187,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X6a-Gs-8Z7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="193" y="726"/>
+            <point key="canvasLocation" x="1117" y="23"/>
         </scene>
         <!--Upload Photo View Controller-->
         <scene sceneID="d07-Iu-HIj">
@@ -202,12 +202,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wi5-tG-u9o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1267" y="777"/>
+            <point key="canvasLocation" x="981" y="749"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QIW-ao-hUY">
             <objects>
-                <navigationController id="z4Z-J0-jfl" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="z4Z-J0-jfl" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZfD-RK-9QJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -220,7 +220,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hNU-dn-4tY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="176" y="23"/>
+            <point key="canvasLocation" x="-816" y="23"/>
         </scene>
     </scenes>
     <resources>

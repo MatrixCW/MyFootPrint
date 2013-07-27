@@ -11,6 +11,7 @@
 #import "MFPQueryGeolocation.h"
 #import "dataUtil.h"
 #import "CacheManager.h"
+#import "MFPrrLoginWebViewController.h"
 @interface MFPLoginViewController ()
 
 @end
@@ -216,8 +217,22 @@
     
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:@"SegueToRRLogin"]){
+        
+        if([segue.destinationViewController isKindOfClass:[MFPrrLoginWebViewController class]]){
+            
+            MFPrrLoginWebViewController *tempVC = (MFPrrLoginWebViewController*) segue.destinationViewController;
+            tempVC.myDelegate = self;
+        }
+        
+    }
+}
 
 
+-(void)dismissModalLoginViewController{
+    [self dismissViewControllerAnimated:YES completion:Nil];
+}
 
 -(void)goToNextStage{
     [self performSegueWithIdentifier:SEGUE_FROM_LOGIN_TO_UPLOADING sender:self];
