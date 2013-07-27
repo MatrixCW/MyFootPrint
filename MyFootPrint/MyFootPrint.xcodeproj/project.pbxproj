@@ -690,6 +690,7 @@
 				0BEA00A117A35FD600061BB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0BEA00A217A35FD600061BB6 /* Build configuration list for PBXNativeTarget "MyFootPrintTests" */ = {
 			isa = XCConfigurationList;
@@ -698,6 +699,7 @@
 				0BEA00A417A35FD600061BB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
