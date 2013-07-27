@@ -8,11 +8,16 @@
 
 #import "MFPUploadPhotoViewController.h"
 #import "MFPConstants.h"
+#import <AssetsLibrary/AssetsLibrary.h>
+#import <CoreLocation/CLLocation.h>
+
 @interface MFPUploadPhotoViewController ()
 
 @end
 
-@implementation MFPUploadPhotoViewController
+@implementation MFPUploadPhotoViewController{
+    NSMutableArray *assetGroups;
+}
 
 
 - (void)viewDidLoad
@@ -24,7 +29,37 @@
     UIImageView *backGroundView = [[UIImageView alloc] initWithImage:backgroundImage];
     self.view = backGroundView;
     
-    [self selectPhoto:Nil];
+    //[self selectPhoto:Nil];
+    assetGroups = [[NSMutableArray alloc] init];
+    
+    MFPQueryGeolocation *tempQuery  = [[MFPQueryGeolocation alloc] init];
+    
+    
+    void (^assetEnumerator)
+    (ALAsset *, NSUInteger, BOOL *) = ^(ALAsset *result, NSUInteger index, BOOL *stop) {
+        if(result != nil) {
+            CLLocation *tempLocation = (CLLocation*)[result valueForProperty:ALAssetPropertyLocation];
+            [tempQuery getGeolocation:CGPointMake(tempLocation.coordinate.latitude, tempLocation.coordinate.longitude)];
+        }
+    };
+    
+    void (^assetGroupEnumerator)(ALAssetsGroup *, BOOL *) = ^(ALAssetsGroup *group, BOOL *stop){
+        
+        if(group != nil) {
+            NSLog(@"hahahahahaha");
+            [group enumerateAssetsUsingBlock:assetEnumerator];
+        }
+    };
+    
+    
+                                         
+                                         
+    ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
+    NSUInteger groupTypes = ALAssetsGroupAll;
+                                         
+    [library enumerateGroupsWithTypes:groupTypes
+                           usingBlock:assetGroupEnumerator
+                         failureBlock:^(NSError *error) {NSLog(@"A problem occurred");}];
 }
 
 
@@ -37,6 +72,11 @@
     
     [self presentViewController:picker animated:YES completion:NULL];
     
+    
+}
+
+
+-(void)getChinaProvinces{
     
 }
 
