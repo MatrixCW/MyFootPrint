@@ -118,7 +118,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="tX1-aP-5nf"/>
                     <connections>
-                        <outlet property="cameraButtonPressed" destination="06i-5K-fFN" id="Qu9-Ku-chS"/>
                         <outlet property="footPrintButton" destination="WTv-QC-sBb" id="zg8-2W-L1S"/>
                         <segue destination="2" kind="modal" identifier="POP_LOGIN_VC" id="3cn-2v-oyn"/>
                     </connections>
@@ -270,12 +269,53 @@
                                     <constraint firstAttribute="width" constant="253" id="FGs-oc-pCt"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="EWR-WU-KAn">
-                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="itemSize" width="180" height="202"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DisplayImageCell" id="uCB-IR-Sh5" customClass="MFPImageCell">
+                                        <rect key="frame" x="36" y="0.0" width="180" height="202"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="202"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pWO-im-a2j">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="157" id="2qJ-ah-VFO"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="pushpin.png" translatesAutoresizingMaskIntoConstraints="NO" id="PPa-rU-Phd">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="33" id="BwL-cP-xPa"/>
+                                                        <constraint firstAttribute="width" constant="30" id="G4H-OI-6q4"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ue-UL-6Jy">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="pWO-im-a2j" firstAttribute="top" secondItem="uCB-IR-Sh5" secondAttribute="top" type="default" id="486-fi-HhA"/>
+                                            <constraint firstItem="PPa-rU-Phd" firstAttribute="top" secondItem="uCB-IR-Sh5" secondAttribute="top" type="default" id="GKF-qS-5N5"/>
+                                            <constraint firstItem="PPa-rU-Phd" firstAttribute="leading" secondItem="uCB-IR-Sh5" secondAttribute="leading" constant="70" id="KS7-9R-dUb"/>
+                                            <constraint firstItem="2Ue-UL-6Jy" firstAttribute="centerX" secondItem="pWO-im-a2j" secondAttribute="centerX" type="default" id="Zi6-VY-L7g"/>
+                                            <constraint firstItem="pWO-im-a2j" firstAttribute="trailing" secondItem="uCB-IR-Sh5" secondAttribute="trailing" type="default" id="liA-VO-EXY"/>
+                                            <constraint firstItem="2Ue-UL-6Jy" firstAttribute="top" secondItem="pWO-im-a2j" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="oFW-Uc-Lwb"/>
+                                            <constraint firstItem="pWO-im-a2j" firstAttribute="leading" secondItem="uCB-IR-Sh5" secondAttribute="leading" type="default" id="pOi-gS-159"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imagePreviewView" destination="pWO-im-a2j" id="mWO-so-NH1"/>
+                                            <outlet property="nameTag" destination="2Ue-UL-6Jy" id="1iW-Tp-IIs"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
                             </collectionView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="你的足迹" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLT-zq-h9D">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -329,6 +369,7 @@
         <image name="camera.png" width="90" height="60"/>
         <image name="header.png" width="640" height="95"/>
         <image name="home2.png" width="174" height="174"/>
+        <image name="pushpin.png" width="44" height="62"/>
         <image name="rr_login.png" width="234" height="48"/>
         <image name="share.png" width="78" height="52"/>
         <image name="upload_bg.png" width="640" height="960"/>
@@ -342,6 +383,13 @@
                 <relationship kind="action" name="footPrintButtonPressed:"/>
                 <relationship kind="action" name="shareButtonPressed:"/>
                 <relationship kind="outlet" name="footPrintButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="MFPImageCell" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MFPImageCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="imagePreviewView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="nameTag" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="MFPLoginViewController" superclassName="UIViewController">
@@ -366,6 +414,12 @@
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
         </class>
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
