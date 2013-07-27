@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MFPConstants.h"
+
 
 @interface MFPLoginViewController : UIViewController
 
@@ -15,6 +17,6 @@
 
 @property NSString *currentLoginPlatform;
 
-@property NSMutableArray *userInfo;
+@property NSMutableDictionary *userInfo;
 
 @end

@@ -67,7 +67,7 @@ static CGFloat defaultTriangleHypotenuse_,
   // Release subvies & remove notification observer
   [self _releaseSubviews];
   [[NSNotificationCenter defaultCenter] removeObserver:self name:kKYNCircleMenuClose object:nil];
-  [super dealloc];
+  //[super dealloc];
 }
 
 - (void)_releaseSubviews {
@@ -138,7 +138,7 @@ centerButtonBackgroundImageName:(NSString *)centerButtonBackgroundImageName {
   CGRect frame = CGRectMake(0.f, 0.f, kKYCircleMenuViewWidth, viewHeight);
   UIView * view = [[UIView alloc] initWithFrame:frame];
   self.view = view;
-  [view release];
+  //[view release];
 }
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -167,7 +167,7 @@ centerButtonBackgroundImageName:(NSString *)centerButtonBackgroundImageName {
             forState:UIControlStateNormal];
     [button addTarget:self action:@selector(runButtonActions:) forControlEvents:UIControlEventTouchUpInside];
     [self.menu addSubview:button];
-    [button release];
+    //[button release];
   }
   
   // Main Button

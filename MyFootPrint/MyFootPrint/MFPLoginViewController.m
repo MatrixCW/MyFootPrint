@@ -23,8 +23,10 @@
     [self.renrenLoginButton addTarget:self action:@selector(renrenLogin) forControlEvents:UIControlEventTouchUpInside];
     [self.sinaWeiboLoginButton addTarget:self action:@selector(weiboLogin) forControlEvents:UIControlEventTouchUpInside];
     
-    self.userInfo = [NSMutableArray array];
+    self.userInfo = [NSMutableDictionary dictionaryWithCapacity:3];
     
+    NSLog(@"%@",USER_INFO_STORING_PATH);
+        
 }
 
 
@@ -38,12 +40,49 @@
             NSMutableString *textStr = [NSMutableString stringWithFormat:@"返回结果:\n"];
             
             while ((key = [enumerator nextObject])) {
+                
                 [textStr appendFormat:@"%@ = %@\n",key,[userInfo objectForKey:key]];
                 
-                if([key isEqualToString:@"headurl"])
-                   NSLog(@"mamama %@",[userInfo objectForKey:key]);
+                
+                
+                if([key isEqualToString:@"mainurl"]){
+                    NSString *bigAvatar = [userInfo objectForKey:key];
+                    
+                    if([self.currentLoginPlatform isEqualToString:kBD_SOCIAL_LOGIN_PLATFORM_SINAWEIBO])
+                        bigAvatar = [bigAvatar stringByReplacingOccurrencesOfString:@"/50/" withString:@"/180/"];
+                    
+                    [self.userInfo setObject:bigAvatar forKey:@"main_url"];
+                    
+                }
+                
+                if([key isEqualToString:@"tinyurl"]){
+                    
+                    [self.userInfo setObject:[userInfo objectForKey:key] forKey:@"tiny_url"];
+                
+                }
+                
+                if([key isEqualToString:@"username"]){
+                    
+                    [self.userInfo setObject:[userInfo objectForKey:key] forKey:@"user_name"];
+                }
+                if([key isEqualToString:@"media_uid"]){
+                    
+                    NSString *prefix;
+                    
+                    if([self.currentLoginPlatform isEqualToString:kBD_SOCIAL_LOGIN_PLATFORM_SINAWEIBO])
+                        prefix = @"wb";
+                    else
+                        if([self.currentLoginPlatform isEqualToString:kBD_SOCIAL_LOGIN_PLATFORM_RENREN])
+                            prefix = @"rr";
+                    
+                    NSString *userID = [NSString stringWithFormat:@"%@_%@",prefix,[userInfo objectForKey:key]];
+                    
+                    [self.userInfo setObject:userID forKey:@"media_uid"];
+                }
             }
             
+            [self writeToTextFile:self.userInfo];
+     
         } else {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"失败" message:[NSString stringWithFormat:@"%@获取信息失败\n error code:%d;\n error message:%@",platformType,error.code,[error localizedDescription]] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
             [alert show];
@@ -51,6 +90,18 @@
         }
     }];
 }
+
+
+-(void) writeToTextFile:(NSDictionary*)fileToSave{
+    
+    NSFileManager *myFileManager = [NSFileManager defaultManager] ;
+    
+    if([myFileManager fileExistsAtPath:USER_INFO_STORING_PATH])
+        [myFileManager removeItemAtPath:USER_INFO_STORING_PATH error:Nil];
+    
+    [fileToSave writeToFile:USER_INFO_STORING_PATH atomically:NO];
+}
+
 
 -(void)authorizeWithPlatformType:(NSString *)platformType
 {
@@ -151,7 +202,8 @@
     
     self.currentLoginPlatform = kBD_SOCIAL_LOGIN_PLATFORM_SINAWEIBO;
     
-       NSString *platformType = [NSString stringWithFormat:kBD_SOCIAL_LOGIN_PLATFORM_SINAWEIBO];
+    NSString *platformType = [NSString stringWithFormat:kBD_SOCIAL_LOGIN_PLATFORM_SINAWEIBO];
+    
     if ([BDSocialLoginSDK isAccessTokenValidWithPlatformType:platformType]) {
         [self getUserInfoWithPlatformType:platformType];
     } else {
@@ -162,6 +214,7 @@
 }
 
 -(void)clear{
+    
     self.currentLoginPlatform = Nil;
     [self.userInfo removeAllObjects];
 }
