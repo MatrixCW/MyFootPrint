@@ -102,7 +102,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="niF-cg-4Tw" kind="push" id="Yny-lL-EzJ"/>
+                                    <segue destination="kBN-Gf-HlN" kind="push" id="HUe-2t-dfl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -189,21 +189,6 @@
             </objects>
             <point key="canvasLocation" x="193" y="726"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="3wv-e1-cLo">
-            <objects>
-                <viewController id="niF-cg-4Tw" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="b8L-eK-VKd">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Wdp-Ug-Qbf"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zeN-jk-Vk7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="165" y="-555"/>
-        </scene>
         <!--Upload Photo View Controller-->
         <scene sceneID="d07-Iu-HIj">
             <objects>
@@ -279,4 +264,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="HUe-2t-dfl"/>
+    </inferredMetricsTieBreakers>
 </document>
