@@ -78,7 +78,6 @@
 -(void)getPhotoGeoData{
     
     if(self.currentProcessingIndex >= self.alAssetsArray.count){
-        [self setUpHilightedProinceArray];
         [self loadImages];
         return;
     }
@@ -94,8 +93,9 @@
 
 -(void)setUpHilightedProinceArray{
     NSMutableArray * array = [NSMutableArray array];
+    NSArray *sourceArray = [self.provincesAndPhotos allKeys];
     
-    for(NSString *str in self.queriedGeoData){
+    for(NSString *str in sourceArray){
         NSString * copy = [NSString stringWithString:str];
         [array addObject:[self removeRedudentStrin:copy]];
     }
@@ -121,8 +121,11 @@
         }
     }
     
-    NSLog(@"%@",self.alAssetsArray);
+    [self setUpHilightedProinceArray];
+    
     [self showProvincesInTableView];
+    
+    
 }
 
 

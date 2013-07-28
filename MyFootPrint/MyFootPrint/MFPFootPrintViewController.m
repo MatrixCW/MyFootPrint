@@ -15,6 +15,8 @@
 #define BLUE_PROVINCE @"%@blue"
 #import "TRStringExtensions.h"
 #import "MFPMyVisitedProvinces.h"
+#import "MFPProvinceMapUtil.h"
+
 #define CREATE_USER_URL @"http://www.friendoc.com.cn:3000/api/rrlogin.json?rrid=%@&name=%@&thumbnail=%@&token=%@"
 @interface MFPFootPrintViewController ()
 
@@ -38,9 +40,23 @@
     self.footPrintMenu.delegate = self;
     
     NSArray *visitedprovinces = [MFPMyVisitedProvinces returnVisitedProvinces];
+    
     if(visitedprovinces){
-        NSMutableArray *provinces = [NSMutableArray array];
+        NSMutableArray *provincesCode = [NSMutableArray array];
+        NSDictionary *dict = [MFPProvinceMapUtil provinceMap];
+
+        for(NSString * str in visitedprovinces){
+            
+            NSLog(@"%@",str);
+            NSString *code = [dict objectForKey:str];
+            [provincesCode addObject:code];
+            
+            [self lightUpMapWithArray:provincesCode];
+            
+        }
     }
+    
+    
         
 	// Do any additional setup after loading the view.
 }
