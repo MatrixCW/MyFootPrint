@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface MFPFriendFootPrintViewController : UIViewController
+@property NSArray *footprint;
+@property NSString *label;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 - (IBAction)backButtonPressed:(id)sender;
 
 @end

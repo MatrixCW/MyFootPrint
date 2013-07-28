@@ -190,6 +190,8 @@
 		4B6EEC7A17A4CE3200F17091 /* 32blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B6EEC7717A4CE3200F17091 /* 32blue.png */; };
 		4B6EEC7B17A4CE3200F17091 /* 33blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B6EEC7817A4CE3200F17091 /* 33blue.png */; };
 		4B6EEC7C17A4CE3200F17091 /* 34blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B6EEC7917A4CE3200F17091 /* 34blue.png */; };
+		4B6EEC7E17A4D45600F17091 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6EEC7D17A4D45600F17091 /* SDWebImage.framework */; };
+		4B6EEC8017A4D61400F17091 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6EEC7F17A4D61400F17091 /* ImageIO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -441,6 +443,8 @@
 		4B6EEC7717A4CE3200F17091 /* 32blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 32blue.png; sourceTree = "<group>"; };
 		4B6EEC7817A4CE3200F17091 /* 33blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 33blue.png; sourceTree = "<group>"; };
 		4B6EEC7917A4CE3200F17091 /* 34blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 34blue.png; sourceTree = "<group>"; };
+		4B6EEC7D17A4D45600F17091 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
+		4B6EEC7F17A4D61400F17091 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -448,6 +452,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B6EEC8017A4D61400F17091 /* ImageIO.framework in Frameworks */,
 				0BC4CA7317A3C764003A4AE5 /* AssetsLibrary.framework in Frameworks */,
 				0BEA010D17A3B83100061BB6 /* SystemConfiguration.framework in Frameworks */,
 				0BEA010C17A3B82900061BB6 /* MobileCoreServices.framework in Frameworks */,
@@ -463,6 +468,7 @@
 				0BEA006F17A35FD600061BB6 /* CoreGraphics.framework in Frameworks */,
 				0BEA00C317A3658100061BB6 /* BDSocialLogin.framework in Frameworks */,
 				0BEA00C517A3658100061BB6 /* TencentOpenAPI in Frameworks */,
+				4B6EEC7E17A4D45600F17091 /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +488,7 @@
 		0BEA005E17A35FD600061BB6 = {
 			isa = PBXGroup;
 			children = (
+				4B6EEC7F17A4D61400F17091 /* ImageIO.framework */,
 				4B37E83117A3E21A00C54C85 /* dataUtil.h */,
 				4B37E83217A3E21A00C54C85 /* dataUtil.m */,
 				4B6EEC4D17A46AFC00F17091 /* MFPAPIClient.h */,
@@ -508,6 +515,7 @@
 		0BEA006917A35FD600061BB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4B6EEC7D17A4D45600F17091 /* SDWebImage.framework */,
 				0BC4CA7217A3C764003A4AE5 /* AssetsLibrary.framework */,
 				0BEA010B17A3B82900061BB6 /* MobileCoreServices.framework */,
 				0BEA010917A3B1B000061BB6 /* Security.framework */,
@@ -1257,6 +1265,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/BDSocialLogin\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyFootPrint/MyFootPrint-Prefix.pch";
@@ -1278,6 +1287,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/BDSocialLogin\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyFootPrint/MyFootPrint-Prefix.pch";

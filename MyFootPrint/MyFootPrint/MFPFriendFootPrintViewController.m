@@ -7,7 +7,8 @@
 //
 
 #import "MFPFriendFootPrintViewController.h"
-
+#import "MFPConstants.h"
+#define BLUE_PROVINCE @"%@blue"
 @interface MFPFriendFootPrintViewController ()
 
 @end
@@ -26,6 +27,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.titleLabel.text = self.label;
+    [self lightUpMapWithArray:self.footprint];
+    
 	// Do any additional setup after loading the view.
 }
 
@@ -39,4 +43,19 @@
     
     [self dismissViewControllerAnimated:YES completion:Nil];
 }
+
+- (void)lightUpMapWithArray:(NSArray *)traveledProvince{
+    for(NSString *s in traveledProvince){
+        UIImage *province = [UIImage imageNamed:[NSString stringWithFormat:BLUE_PROVINCE,s]];
+        UIImageView *imgView = [[UIImageView alloc] initWithImage:province];
+        imgView.frame = self.view.bounds;
+        
+        //imgView.frame = self.background.frame;
+        //NSLog(@"width%f, height%f",imgView.frame.origin.x,imgView.frame.origin.y);
+        //NSLog(@"widtfafah%f, height%f",self.background.frame.size.width,self.background.frame.origin.y);
+        
+        [self.view addSubview:imgView];
+    }
+}
+
 @end

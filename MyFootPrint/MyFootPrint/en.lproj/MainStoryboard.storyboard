@@ -139,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jdV-Lh-T1V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1452" y="-462"/>
+            <point key="canvasLocation" x="-1268" y="-702"/>
         </scene>
         <!--Friend List View Controller-->
         <scene sceneID="Drl-YK-UcM">
@@ -226,9 +226,9 @@
                                                         <constraint firstAttribute="width" constant="50" id="xRo-UL-gmK"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="姓名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75l-a5-hK3">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="姓名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75l-a5-hK3">
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="49" id="2Xc-8f-2i3"/>
+                                                        <constraint firstAttribute="width" constant="108" id="BOt-lL-Ekj"/>
                                                         <constraint firstAttribute="height" constant="21" id="wSd-0u-Aap"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
@@ -367,6 +367,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mev-5A-rCt"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="mXe-gT-PMn" id="sgW-7V-Ww2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZF6-AG-xRs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1071,6 +1074,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MFPFriendFootPrintViewController.h"/>
             <relationships>
                 <relationship kind="action" name="backButtonPressed:"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="MFPFriendListTableCell" superclassName="UITableViewCell">
@@ -1151,6 +1155,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="eef-SE-JwI"/>
+        <segue reference="ipL-ae-Jw6"/>
     </inferredMetricsTieBreakers>
 </document>
