@@ -51,6 +51,7 @@
     NSString *token = [[dataUtil sharedInstance] token];
     NSString *thumbnail = [[dataUtil sharedInstance] thumbnail];
     NSURL *url = [NSURL URLWithString:[[NSString stringWithFormat:CREATE_USER_URL,rrid,name,thumbnail,token] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    NSLog(@"%@",url);
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:[NSURLRequest requestWithURL:url] success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
         NSLog(@"%@",JSON);
         [[dataUtil sharedInstance] setUid:[JSON objectForKey:@"id"]];
@@ -114,7 +115,10 @@
 - (void) radialMenu:(ALRadialMenu *)radialMenu didSelectItemAtIndex:(NSInteger)index {
     [self.footPrintMenu itemsWillDisapearIntoButton:self.footPrintButton];
     if (index == 1) {
-        NSLog(@"email");
+        NSLog(@"logout");
+        [[dataUtil sharedInstance] logout];
+        [self viewDidAppear:YES];
+        
     } else if (index == 2) {
         [self performSegueWithIdentifier:@"SEGUE_TO_CARD_VC" sender:self];
         NSLog(@"google+");
