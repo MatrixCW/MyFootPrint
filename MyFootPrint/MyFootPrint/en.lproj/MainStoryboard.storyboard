@@ -934,8 +934,6 @@
         <image name="upload_bg.png" width="640" height="960"/>
         <image name="wb_login.png" width="234" height="48"/>
     </resources>
-<<<<<<< HEAD
-=======
     <classes>
         <class className="MFPCardViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MFPCardViewController.h"/>
@@ -1023,6 +1021,7 @@
         <class className="MFPrrLoginWebViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MFPrrLoginWebViewController.h"/>
             <relationships>
+                <relationship kind="action" name="backButtonPressed:"/>
                 <relationship kind="outlet" name="indicator" candidateClass="UIActivityIndicatorView"/>
                 <relationship kind="outlet" name="loginView" candidateClass="UIWebView"/>
             </relationships>
@@ -1050,7 +1049,6 @@
             </relationships>
         </class>
     </classes>
->>>>>>> 30170a8cae140bbb9d1ac63b326c70b2aa610b9d
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
