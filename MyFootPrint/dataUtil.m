@@ -3,6 +3,9 @@
 
 #define TOKEN_CACHE_KEY @"token"
 #define UID_CACHE_KEY @"uid"
+#define NAME_CACHE_KEY @"name"
+#define RRID_CACHE_KEY @"rrid"
+#define THUMB_CACHE_KEY @"thumbnail"
 
 static dataUtil* sharedInstance = nil;
 @implementation dataUtil
@@ -14,7 +17,7 @@ static dataUtil* sharedInstance = nil;
 }
 
 - (BOOL) isLoggedIn {
-    return self.token && self.uid;
+    return self.token && self.rrid;
 }
 
 
@@ -31,6 +34,19 @@ static dataUtil* sharedInstance = nil;
     return (NSString*)[[CacheManager sharedManager] objectForKey:UID_CACHE_KEY];
 }
 
+- (NSString*)rrid {
+    return (NSString*)[[CacheManager sharedManager] objectForKey:RRID_CACHE_KEY];
+}
+
+- (NSString*)thumbnail {
+    return (NSString*)[[CacheManager sharedManager] objectForKey:THUMB_CACHE_KEY];
+}
+
+- (NSString*)name {
+    return (NSString*)[[CacheManager sharedManager] objectForKey:NAME_CACHE_KEY];
+}
+
+
 - (void)setToken:(NSString *)token {
     [[CacheManager sharedManager] cacheObjectForKey:TOKEN_CACHE_KEY object:token];
 }
@@ -39,4 +55,16 @@ static dataUtil* sharedInstance = nil;
     [[CacheManager sharedManager] cacheObjectForKey:UID_CACHE_KEY object:uid];
 }
 
+- (void)setThumbnail:(NSString *)thumb {
+    [[CacheManager sharedManager] cacheObjectForKey:THUMB_CACHE_KEY object:thumb];
+}
+
+- (void)setRrid:(NSString *)rrid {
+    [[CacheManager sharedManager] cacheObjectForKey:RRID_CACHE_KEY object:rrid];
+}
+
+- (void)setName:(NSString *)name {
+    name = [name urlEncode];
+    [[CacheManager sharedManager] cacheObjectForKey:NAME_CACHE_KEY object:name];
+}
 @end

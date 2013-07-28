@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MyFootPrint/MFPFootPrintViewController.m"
-         timestampString = "396625133.669131"
+         timestampString = "396655713.863934"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "18"
-         endingLineNumber = "18"
+         startingLineNumber = "23"
+         endingLineNumber = "23"
          landmarkName = "@implementation MFPFootPrintViewController"
          landmarkType = "3">
       </FileBreakpoint>
@@ -21,11 +21,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MyFootPrint/MFPrrLoginWebViewController.m"
-         timestampString = "396617728.062843"
+         timestampString = "396654757.947598"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "99"
-         endingLineNumber = "99"
+         startingLineNumber = "104"
+         endingLineNumber = "104"
          landmarkName = "-webViewDidFinishLoad:"
          landmarkType = "5">
       </FileBreakpoint>

@@ -14,4 +14,6 @@
 - (IBAction)shareButtonPressed:(id)sender;
 - (IBAction)cameraButtonPressed:(id)sender;
 @property (strong, nonatomic) ALRadialMenu *footPrintMenu;
+@property (weak, nonatomic) IBOutlet UIImageView *background;
+- (void)lightUpMapWithArray:(NSArray *)traveledProvince;
 @end

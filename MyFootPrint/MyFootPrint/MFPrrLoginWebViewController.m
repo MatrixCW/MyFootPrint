@@ -10,6 +10,9 @@
 #import "AFJSONRequestOperation.h"
 #import "dataUtil.h"
 #import "CacheManager.h"
+#import "MFPAPIClient.h"
+#import "MFPConstants.h"
+
 @interface MFPrrLoginWebViewController ()
 
 @end
@@ -49,7 +52,7 @@
 }
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
-	NSLog(@"Start Request");
+	//NSLog(@"Start Request");
     self.indicator.hidden = NO;
     [self.indicator startAnimating];
     NSString *urlString = request.URL.absoluteString;
@@ -70,11 +73,13 @@
          
                                                         success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
                                                             [self dismissViewControllerAnimated:YES completion:^{[self.myDelegate dismissModalLoginViewController];}];
-                                                            
+                                                            NSLog(@"%@",JSON);
                                                             NSLog(@"Token %@", [JSON objectForKey:@"token"]);
                                                             NSLog(@"uid %@", [JSON objectForKey:@"uid"]);
                                                             [[dataUtil sharedInstance] setToken:[JSON objectForKey:@"token"]];
-                                                            [[dataUtil sharedInstance] setUid:[JSON objectForKey:@"uid"]];
+                                                            [[dataUtil sharedInstance] setRrid:[JSON objectForKey:@"uid"]];
+                                                            [[dataUtil sharedInstance] setName:[JSON objectForKey:@"name"]];
+                                                            [[dataUtil sharedInstance] setThumbnail:[JSON objectForKey:@"selfurl"]];
                                                         }
          
                                                         failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
