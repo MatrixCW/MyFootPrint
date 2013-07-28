@@ -2,8 +2,8 @@
 //  MFPFriendListViewController.m
 //  MyFootPrint
 //
-//  Created by Angel on 13-7-28.
-//  Copyright (c) 2013年 Angel. All rights reserved.
+//  Created by Cui Wei on 13-7-28.
+//  Copyright (c) 2013年 Cui Wei. All rights reserved.
 //
 
 #import "MFPFriendListViewController.h"
@@ -61,6 +61,10 @@
     
     
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self performSegueWithIdentifier:@"SEGUE_TO_FRIEND_FP" sender:self];
 }
 - (void)didReceiveMemoryWarning
 {

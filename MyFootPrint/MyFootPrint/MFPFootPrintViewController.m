@@ -36,8 +36,7 @@
     self.footPrintMenu = [[ALRadialMenu alloc] init];
     self.footPrintMenu.delegate = self;
 	// Do any additional setup after loading the view.
-    NSArray *a = [NSArray array];
-    [self lightUpMapWithArray:a];
+   
 }
 
 - (void)didReceiveMemoryWarning
@@ -117,10 +116,14 @@
     if (index == 1) {
         NSLog(@"email");
     } else if (index == 2) {
+        [self performSegueWithIdentifier:@"SEGUE_TO_CARD_VC" sender:self];
         NSLog(@"google+");
     } else if (index == 3) {
         NSLog(@"facebook");
+        [self performSegueWithIdentifier:@"SEGUE_TO_EDIT_CARD_VC" sender:self];
+        
     } else if (index == 4) {
+        [self performSegueWithIdentifier:@"SEGUE_TO_FRIEND_LIST_VC" sender:self];
         NSLog(@"facebook");
     }
     
