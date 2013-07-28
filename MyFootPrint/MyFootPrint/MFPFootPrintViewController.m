@@ -47,6 +47,7 @@
 
         for(NSString * str in visitedprovinces){
             
+            NSLog(@"%@",str);
             NSString *code = [dict objectForKey:str];
             [provincesCode addObject:code];
             
