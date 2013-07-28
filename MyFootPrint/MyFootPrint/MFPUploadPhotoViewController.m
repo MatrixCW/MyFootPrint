@@ -78,6 +78,7 @@
 -(void)getPhotoGeoData{
     
     if(self.currentProcessingIndex >= self.alAssetsArray.count){
+        [self setUpHilightedProinceArray];
         [self loadImages];
         return;
     }
@@ -91,6 +92,17 @@
     
 }
 
+-(void)setUpHilightedProinceArray{
+    NSMutableArray * array = [NSMutableArray array];
+    
+    for(NSString *str in self.queriedGeoData){
+        NSString * copy = [NSString stringWithString:str];
+        [array addObject:[self removeRedudentStrin:copy]];
+    }
+    
+    [MFPMyVisitedProvinces copyVisitedProvinces:array];
+    
+}
 -(void)loadImages{
     
     assert(self.alAssetsArray.count == self.queriedGeoData.count);
@@ -227,6 +239,7 @@
     str = [str stringByReplacingOccurrencesOfString:@"壮族" withString:@""];
     str = [str stringByReplacingOccurrencesOfString:@"回族" withString:@""];
     str = [str stringByReplacingOccurrencesOfString:@"维吾尔族" withString:@""];
+    str = [str stringByReplacingOccurrencesOfString:@"市" withString:@""];
     
     return str;
     
