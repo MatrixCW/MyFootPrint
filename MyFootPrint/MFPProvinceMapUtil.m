@@ -42,6 +42,9 @@
     [dict setObject:@"7" forKey:@"青海"];
     [dict setObject:@"8" forKey:@"贵州"];
     [dict setObject:@"9" forKey:@"四川"];
+    [dict setObject:@"32" forKey:@"澳门"];
+    [dict setObject:@"33" forKey:@"香港"];
+    [dict setObject:@"34" forKey:@"上海"];
     return dict;
 }
 

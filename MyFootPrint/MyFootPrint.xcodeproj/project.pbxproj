@@ -176,6 +176,19 @@
 		4B6EEC5817A4878C00F17091 /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B6EEC5717A4878C00F17091 /* icon57.png */; };
 		4B6EEC5A17A4879200F17091 /* icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B6EEC5917A4879200F17091 /* icon114.png */; };
 		4B6EEC6017A49C2F00F17091 /* MFPProvinceMapUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6EEC5F17A49C2F00F17091 /* MFPProvinceMapUtil.m */; };
+		4B6EEC6317A4C85000F17091 /* MFPSendCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6EEC6217A4C84F00F17091 /* MFPSendCardViewController.m */; };
+		4B6EEC6A17A4C8D600F17091 /* diandian.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B6EEC6517A4C8D600F17091 /* diandian.png */; };
+		4B6EEC6B17A4C8D600F17091 /* postcardsample.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B6EEC6617A4C8D600F17091 /* postcardsample.png */; };
+		4B6EEC6C17A4C8D600F17091 /* postcardbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B6EEC6717A4C8D600F17091 /* postcardbg.png */; };
+		4B6EEC6D17A4C8D600F17091 /* send.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B6EEC6817A4C8D600F17091 /* send.png */; };
+		4B6EEC6E17A4C8D600F17091 /* send_press.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B6EEC6917A4C8D600F17091 /* send_press.png */; };
+		4B6EEC7017A4CA8400F17091 /* avatar.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4B6EEC6F17A4CA8300F17091 /* avatar.gif */; };
+		4B6EEC7417A4CE2400F17091 /* 32green.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B6EEC7117A4CE2400F17091 /* 32green.png */; };
+		4B6EEC7517A4CE2400F17091 /* 33green.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B6EEC7217A4CE2400F17091 /* 33green.png */; };
+		4B6EEC7617A4CE2400F17091 /* 34green.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B6EEC7317A4CE2400F17091 /* 34green.png */; };
+		4B6EEC7A17A4CE3200F17091 /* 32blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B6EEC7717A4CE3200F17091 /* 32blue.png */; };
+		4B6EEC7B17A4CE3200F17091 /* 33blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B6EEC7817A4CE3200F17091 /* 33blue.png */; };
+		4B6EEC7C17A4CE3200F17091 /* 34blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B6EEC7917A4CE3200F17091 /* 34blue.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -411,6 +424,20 @@
 		4B6EEC5917A4879200F17091 /* icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon114.png; path = ../../icon114.png; sourceTree = "<group>"; };
 		4B6EEC5E17A49C2F00F17091 /* MFPProvinceMapUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPProvinceMapUtil.h; sourceTree = "<group>"; };
 		4B6EEC5F17A49C2F00F17091 /* MFPProvinceMapUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPProvinceMapUtil.m; sourceTree = "<group>"; };
+		4B6EEC6117A4C84F00F17091 /* MFPSendCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPSendCardViewController.h; sourceTree = "<group>"; };
+		4B6EEC6217A4C84F00F17091 /* MFPSendCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPSendCardViewController.m; sourceTree = "<group>"; };
+		4B6EEC6517A4C8D600F17091 /* diandian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diandian.png; sourceTree = "<group>"; };
+		4B6EEC6617A4C8D600F17091 /* postcardsample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = postcardsample.png; sourceTree = "<group>"; };
+		4B6EEC6717A4C8D600F17091 /* postcardbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = postcardbg.png; sourceTree = "<group>"; };
+		4B6EEC6817A4C8D600F17091 /* send.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = send.png; sourceTree = "<group>"; };
+		4B6EEC6917A4C8D600F17091 /* send_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = send_press.png; sourceTree = "<group>"; };
+		4B6EEC6F17A4CA8300F17091 /* avatar.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = avatar.gif; sourceTree = "<group>"; };
+		4B6EEC7117A4CE2400F17091 /* 32green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 32green.png; sourceTree = "<group>"; };
+		4B6EEC7217A4CE2400F17091 /* 33green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 33green.png; sourceTree = "<group>"; };
+		4B6EEC7317A4CE2400F17091 /* 34green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 34green.png; sourceTree = "<group>"; };
+		4B6EEC7717A4CE3200F17091 /* 32blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 32blue.png; sourceTree = "<group>"; };
+		4B6EEC7817A4CE3200F17091 /* 33blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 33blue.png; sourceTree = "<group>"; };
+		4B6EEC7917A4CE3200F17091 /* 34blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 34blue.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -535,6 +562,8 @@
 				4B0D832117A3AA8900E23681 /* MFPFootPrintViewController.m */,
 				0BBDA6B417A4AADE0029FC06 /* MFPSegueToRight.h */,
 				0BBDA6B517A4AADF0029FC06 /* MFPSegueToRight.m */,
+				4B6EEC6117A4C84F00F17091 /* MFPSendCardViewController.h */,
+				4B6EEC6217A4C84F00F17091 /* MFPSendCardViewController.m */,
 				4B6EEC2D17A445D700F17091 /* MFPCardViewController.h */,
 				4B6EEC2E17A445D700F17091 /* MFPCardViewController.m */,
 				0BC4CA7617A44126003A4AE5 /* MFPImageCell.h */,
@@ -669,6 +698,7 @@
 		4B0D832A17A3AAFD00E23681 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				4B6EEC6417A4C8D500F17091 /* sendcard */,
 				0BBDA6C017A4BA970029FC06 /* placeHolder.png */,
 				0BBDA6A417A475C80029FC06 /* check.png */,
 				0BBDA69917A45F630029FC06 /* add.png */,
@@ -741,6 +771,9 @@
 		4B605C0E17A409020047A956 /* blue */ = {
 			isa = PBXGroup;
 			children = (
+				4B6EEC7717A4CE3200F17091 /* 32blue.png */,
+				4B6EEC7817A4CE3200F17091 /* 33blue.png */,
+				4B6EEC7917A4CE3200F17091 /* 34blue.png */,
 				4B605C0F17A409020047A956 /* 10blue.png */,
 				4B605C1017A409020047A956 /* 11blue.png */,
 				4B605C1117A409020047A956 /* 12blue.png */,
@@ -781,6 +814,9 @@
 			children = (
 				4B605C2F17A409020047A956 /* 10green.png */,
 				4B605C3017A409020047A956 /* 11green.png */,
+				4B6EEC7117A4CE2400F17091 /* 32green.png */,
+				4B6EEC7217A4CE2400F17091 /* 33green.png */,
+				4B6EEC7317A4CE2400F17091 /* 34green.png */,
 				4B605C3117A409020047A956 /* 12green.png */,
 				4B605C3217A409020047A956 /* 13green.png */,
 				4B605C3317A409020047A956 /* 14green.png */,
@@ -821,6 +857,19 @@
 				4B605CBD17A442240047A956 /* iCarousel.m */,
 			);
 			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		4B6EEC6417A4C8D500F17091 /* sendcard */ = {
+			isa = PBXGroup;
+			children = (
+				4B6EEC6517A4C8D600F17091 /* diandian.png */,
+				4B6EEC6F17A4CA8300F17091 /* avatar.gif */,
+				4B6EEC6617A4C8D600F17091 /* postcardsample.png */,
+				4B6EEC6717A4C8D600F17091 /* postcardbg.png */,
+				4B6EEC6817A4C8D600F17091 /* send.png */,
+				4B6EEC6917A4C8D600F17091 /* send_press.png */,
+			);
+			path = sendcard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -995,6 +1044,18 @@
 				4B6EEC5817A4878C00F17091 /* icon57.png in Resources */,
 				4B6EEC5A17A4879200F17091 /* icon114.png in Resources */,
 				0BBDA6C117A4BA970029FC06 /* placeHolder.png in Resources */,
+				4B6EEC6A17A4C8D600F17091 /* diandian.png in Resources */,
+				4B6EEC6B17A4C8D600F17091 /* postcardsample.png in Resources */,
+				4B6EEC6C17A4C8D600F17091 /* postcardbg.png in Resources */,
+				4B6EEC6D17A4C8D600F17091 /* send.png in Resources */,
+				4B6EEC6E17A4C8D600F17091 /* send_press.png in Resources */,
+				4B6EEC7017A4CA8400F17091 /* avatar.gif in Resources */,
+				4B6EEC7417A4CE2400F17091 /* 32green.png in Resources */,
+				4B6EEC7517A4CE2400F17091 /* 33green.png in Resources */,
+				4B6EEC7617A4CE2400F17091 /* 34green.png in Resources */,
+				4B6EEC7A17A4CE3200F17091 /* 32blue.png in Resources */,
+				4B6EEC7B17A4CE3200F17091 /* 33blue.png in Resources */,
+				4B6EEC7C17A4CE3200F17091 /* 34blue.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1075,6 +1136,7 @@
 				0BBDA6B317A4A4E90029FC06 /* MFPEditCardViewController.m in Sources */,
 				0BBDA6B617A4AAE00029FC06 /* MFPSegueToRight.m in Sources */,
 				0BBDA6BF17A4AFD10029FC06 /* UIPlaceHolderTextView.m in Sources */,
+				4B6EEC6317A4C85000F17091 /* MFPSendCardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
