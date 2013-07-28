@@ -36,7 +36,6 @@
     self.footPrintMenu = [[ALRadialMenu alloc] init];
     self.footPrintMenu.delegate = self;
 	// Do any additional setup after loading the view.
-   
 }
 
 - (void)didReceiveMemoryWarning
@@ -144,8 +143,7 @@
 }
 
 - (void)lightUpMapWithArray:(NSArray *)traveledProvince{
-    NSArray *provinces = [NSArray arrayWithObjects:@"4",@"2",@"3", nil];
-    for(NSString *s in provinces){
+    for(NSString *s in traveledProvince){
         UIImage *province = [UIImage imageNamed:[NSString stringWithFormat:BLUE_PROVINCE,s]];
         UIImageView *imgView = [[UIImageView alloc] initWithImage:province];
         imgView.frame = CGRectMake(0, 0, 320, 480);
