@@ -22,6 +22,7 @@
 }
 
 - (id)initWithBaseURL:(NSURL *)url {
+    NSLog(@"fafafafa url %@",url);
     self = [super initWithBaseURL:url];
     if (!self) {
         return nil;

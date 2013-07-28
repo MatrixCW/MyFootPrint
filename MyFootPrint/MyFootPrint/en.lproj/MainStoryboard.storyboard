@@ -9,7 +9,7 @@
             <objects>
                 <viewController id="WhJ-Zg-Upw" customClass="MFPCardViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vsd-3I-5FI">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uoR-D1-Xbl" customClass="iCarousel">
@@ -31,14 +31,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VJA-e6-EXx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-393" y="-661"/>
+            <point key="canvasLocation" x="855" y="-29"/>
         </scene>
         <!--Foot Print View Controller-->
         <scene sceneID="fmq-uA-C84">
             <objects>
                 <viewController storyboardIdentifier="FootPrint" id="MCW-Kn-huR" customClass="MFPFootPrintViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RnY-IY-aNN">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_main.png" translatesAutoresizingMaskIntoConstraints="NO" id="Atq-Nf-M6A">
@@ -169,14 +169,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jdV-Lh-T1V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-116" y="23"/>
+            <point key="canvasLocation" x="-514" y="-41"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController storyboardIdentifier="LoginView" id="2" customClass="MFPLoginViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_intro.png" translatesAutoresizingMaskIntoConstraints="NO" id="BFC-Lq-gtD"/>
@@ -243,14 +243,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="374" y="-165"/>
+            <point key="canvasLocation" x="112" y="-789"/>
         </scene>
         <!--Prr Login Web View Controller-->
         <scene sceneID="Fxw-wd-8IA">
             <objects>
                 <viewController id="EZZ-rF-D9g" customClass="MFPrrLoginWebViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2nZ-qI-3gc">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="header.png" translatesAutoresizingMaskIntoConstraints="NO" id="xb7-fX-rY9">
@@ -296,14 +296,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X6a-Gs-8Z7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1117" y="23"/>
+            <point key="canvasLocation" x="1377" y="-801"/>
         </scene>
         <!--Upload Photo View Controller-->
         <scene sceneID="d07-Iu-HIj">
             <objects>
                 <viewController id="kBN-Gf-HlN" customClass="MFPUploadPhotoViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JKg-IX-hay">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="upload_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nco-Dt-k8x"/>
@@ -314,50 +314,52 @@
                                     <constraint firstAttribute="width" constant="253" id="FGs-oc-pCt"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="EWR-WU-KAn">
-                                    <size key="itemSize" width="180" height="202"/>
+                                    <size key="itemSize" width="200" height="200"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DisplayImageCell" id="uCB-IR-Sh5" customClass="MFPImageCell">
-                                        <rect key="frame" x="36" y="0.0" width="180" height="202"/>
+                                        <rect key="frame" x="26" y="0.0" width="200" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="180" height="202"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pWO-im-a2j">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L5R-ao-43P">
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="157" id="2qJ-ah-VFO"/>
+                                                        <constraint firstAttribute="width" constant="143" id="Nfe-cb-jPb"/>
                                                     </constraints>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="pushpin.png" translatesAutoresizingMaskIntoConstraints="NO" id="PPa-rU-Phd">
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="33" id="BwL-cP-xPa"/>
-                                                        <constraint firstAttribute="width" constant="30" id="G4H-OI-6q4"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ue-UL-6Jy">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q30-kK-Z6g">
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="pushpin.png" translatesAutoresizingMaskIntoConstraints="NO" id="AKE-sH-x8y">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="7Au-qx-0xv"/>
+                                                        <constraint firstAttribute="width" constant="20" id="qlD-RM-5gM"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="pWO-im-a2j" firstAttribute="top" secondItem="uCB-IR-Sh5" secondAttribute="top" type="default" id="486-fi-HhA"/>
-                                            <constraint firstItem="PPa-rU-Phd" firstAttribute="top" secondItem="uCB-IR-Sh5" secondAttribute="top" type="default" id="GKF-qS-5N5"/>
-                                            <constraint firstItem="PPa-rU-Phd" firstAttribute="leading" secondItem="uCB-IR-Sh5" secondAttribute="leading" constant="70" id="KS7-9R-dUb"/>
-                                            <constraint firstItem="2Ue-UL-6Jy" firstAttribute="centerX" secondItem="pWO-im-a2j" secondAttribute="centerX" type="default" id="Zi6-VY-L7g"/>
-                                            <constraint firstItem="pWO-im-a2j" firstAttribute="trailing" secondItem="uCB-IR-Sh5" secondAttribute="trailing" type="default" id="liA-VO-EXY"/>
-                                            <constraint firstItem="2Ue-UL-6Jy" firstAttribute="top" secondItem="pWO-im-a2j" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="oFW-Uc-Lwb"/>
-                                            <constraint firstItem="pWO-im-a2j" firstAttribute="leading" secondItem="uCB-IR-Sh5" secondAttribute="leading" type="default" id="pOi-gS-159"/>
+                                            <constraint firstItem="L5R-ao-43P" firstAttribute="top" secondItem="uCB-IR-Sh5" secondAttribute="top" constant="12" type="user" id="3by-Qg-9Nh"/>
+                                            <constraint firstItem="q30-kK-Z6g" firstAttribute="bottom" secondItem="uCB-IR-Sh5" secondAttribute="bottom" type="user" id="HHY-fe-zMR"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="L5R-ao-43P" secondAttribute="bottom" constant="29" type="user" id="JZQ-G9-1Kf"/>
+                                            <constraint firstItem="q30-kK-Z6g" firstAttribute="top" secondItem="L5R-ao-43P" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="VoU-NW-OUU"/>
+                                            <constraint firstAttribute="bottom" secondItem="L5R-ao-43P" secondAttribute="bottom" constant="29" type="user" id="ei7-mU-NZ3"/>
+                                            <constraint firstItem="AKE-sH-x8y" firstAttribute="centerX" secondItem="L5R-ao-43P" secondAttribute="centerX" type="default" id="jRB-qk-Rjd"/>
+                                            <constraint firstItem="L5R-ao-43P" firstAttribute="centerX" secondItem="q30-kK-Z6g" secondAttribute="centerX" type="default" id="jyg-ap-vaR"/>
+                                            <constraint firstItem="L5R-ao-43P" firstAttribute="centerX" secondItem="uCB-IR-Sh5" secondAttribute="centerX" type="user" id="sXM-7n-iww"/>
+                                            <constraint firstItem="AKE-sH-x8y" firstAttribute="top" secondItem="uCB-IR-Sh5" secondAttribute="top" constant="3" id="unw-F1-iQq"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="imagePreviewView" destination="pWO-im-a2j" id="mWO-so-NH1"/>
-                                            <outlet property="nameTag" destination="2Ue-UL-6Jy" id="1iW-Tp-IIs"/>
+                                            <outlet property="imagePreviewView" destination="L5R-ao-43P" id="BTE-hi-Jau"/>
+                                            <outlet property="nameTag" destination="q30-kK-Z6g" id="b54-Te-vNL"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -383,11 +385,127 @@
                     <navigationItem key="navigationItem" id="cmF-zy-81G"/>
                     <connections>
                         <outlet property="displayProvinces" destination="YZB-ud-3Hx" id="Bjp-xr-50e"/>
+                        <segue destination="Gup-A5-nLV" kind="modal" identifier="SEGUE_TO_SHOW_PHOTOS" id="fIl-tJ-UcN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wi5-tG-u9o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="411" y="695"/>
+            <point key="canvasLocation" x="-13" y="725"/>
+        </scene>
+        <!--Display Image View Controller-->
+        <scene sceneID="ZkS-7J-ql2">
+            <objects>
+                <viewController id="Gup-A5-nLV" customClass="MFPDisplayImageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dO7-WF-EwV">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="upload_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="MSW-8w-exy"/>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tsj-c2-4sr">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="504" id="uCV-wG-iL3"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Xbt-4c-DlP">
+                                    <size key="itemSize" width="247" height="221"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SelectImageCell" id="6aX-ad-eqS" customClass="MFPDisplayAllImageCell">
+                                        <rect key="frame" x="36" y="0.0" width="247" height="221"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="247" height="221"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FZH-Jz-A0U">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="199" type="user" id="g7R-wv-SJ5"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="check.png" translatesAutoresizingMaskIntoConstraints="NO" id="yVA-YI-YgW">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="33" id="82A-0T-JRZ"/>
+                                                        <constraint firstAttribute="width" constant="34" id="KLI-BG-Tet"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="FZH-Jz-A0U" firstAttribute="trailing" secondItem="6aX-ad-eqS" secondAttribute="trailing" type="default" id="2ep-IS-zFj"/>
+                                            <constraint firstAttribute="trailing" secondItem="yVA-YI-YgW" secondAttribute="trailing" constant="14" id="8CZ-PB-seO"/>
+                                            <constraint firstItem="FZH-Jz-A0U" firstAttribute="top" secondItem="6aX-ad-eqS" secondAttribute="top" constant="8" type="user" id="KbR-20-mt1"/>
+                                            <constraint firstItem="FZH-Jz-A0U" firstAttribute="leading" secondItem="6aX-ad-eqS" secondAttribute="leading" type="default" id="euh-MS-eqh"/>
+                                            <constraint firstAttribute="bottom" secondItem="FZH-Jz-A0U" secondAttribute="bottom" constant="14" type="user" id="fc2-9a-a6L"/>
+                                            <constraint firstItem="yVA-YI-YgW" firstAttribute="top" secondItem="6aX-ad-eqS" secondAttribute="top" constant="15" id="oJo-7N-pZv"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="checkView" destination="yVA-YI-YgW" id="sBS-6L-GhG"/>
+                                            <outlet property="imageView" destination="FZH-Jz-A0U" id="j0s-ZR-3pf"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2h-pi-xCs">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="GpY-Wx-1bb"/>
+                                    <constraint firstAttribute="width" constant="64" id="KjG-Hq-j2C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="back_button.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="Gup-A5-nLV" eventType="touchUpInside" id="Awn-Oa-2p7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQL-Ga-e90">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="53" id="p8z-XZ-xMU"/>
+                                    <constraint firstAttribute="height" constant="41" id="zrh-cJ-eIK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="add.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addButtonPressed:" destination="Gup-A5-nLV" eventType="touchUpInside" id="1Vh-5p-TzO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MSW-8w-exy" firstAttribute="bottom" secondItem="dO7-WF-EwV" secondAttribute="bottom" type="default" id="Ep9-HR-0lB"/>
+                            <constraint firstAttribute="trailing" secondItem="qQL-Ga-e90" secondAttribute="trailing" constant="9" id="Jkz-do-jc0"/>
+                            <constraint firstItem="MSW-8w-exy" firstAttribute="top" secondItem="dO7-WF-EwV" secondAttribute="top" type="default" id="NV0-xS-AhS"/>
+                            <constraint firstItem="MSW-8w-exy" firstAttribute="trailing" secondItem="dO7-WF-EwV" secondAttribute="trailing" type="default" id="bHp-qT-IWT"/>
+                            <constraint firstItem="MSW-8w-exy" firstAttribute="leading" secondItem="dO7-WF-EwV" secondAttribute="leading" type="default" id="cLr-9m-C2r"/>
+                            <constraint firstAttribute="bottom" secondItem="J2h-pi-xCs" secondAttribute="bottom" constant="5" id="e1p-5A-Hc2"/>
+                            <constraint firstItem="J2h-pi-xCs" firstAttribute="bottom" secondItem="qQL-Ga-e90" secondAttribute="bottom" type="default" id="fnj-Bz-q4N"/>
+                            <constraint firstItem="tsj-c2-4sr" firstAttribute="top" secondItem="dO7-WF-EwV" secondAttribute="top" type="default" id="iIW-wN-BWp"/>
+                            <constraint firstItem="tsj-c2-4sr" firstAttribute="trailing" secondItem="dO7-WF-EwV" secondAttribute="trailing" type="default" id="jK4-AM-LaP"/>
+                            <constraint firstItem="J2h-pi-xCs" firstAttribute="leading" secondItem="dO7-WF-EwV" secondAttribute="leading" constant="10" id="kvv-CG-swV"/>
+                            <constraint firstItem="tsj-c2-4sr" firstAttribute="leading" secondItem="dO7-WF-EwV" secondAttribute="leading" type="default" id="ywN-7u-Ze3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageDisplayArea" destination="tsj-c2-4sr" id="Lhc-Oe-IAL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6iO-mi-VOl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="450" y="735"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QIW-ao-hUY">
@@ -405,13 +523,16 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hNU-dn-4tY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-816" y="23"/>
+            <point key="canvasLocation" x="-1260" y="-41"/>
         </scene>
     </scenes>
     <resources>
+        <image name="add.png" width="149" height="149"/>
+        <image name="back_button.png" width="78" height="52"/>
         <image name="bg_intro.png" width="640" height="960"/>
         <image name="bg_main.png" width="640" height="960"/>
         <image name="camera.png" width="90" height="60"/>
+        <image name="check.png" width="29" height="27"/>
         <image name="header.png" width="640" height="95"/>
         <image name="home2.png" width="174" height="174"/>
         <image name="pushpin.png" width="44" height="62"/>
@@ -420,9 +541,88 @@
         <image name="upload_bg.png" width="640" height="960"/>
         <image name="wb_login.png" width="234" height="48"/>
     </resources>
+    <classes>
+        <class className="MFPCardViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MFPCardViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="cardView" candidateClass="iCarousel"/>
+            </relationships>
+        </class>
+        <class className="MFPDisplayAllImageCell" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MFPDisplayAllImageCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="checkView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="MFPDisplayImageViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MFPDisplayImageViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="addButtonPressed:"/>
+                <relationship kind="action" name="backButtonPressed:"/>
+                <relationship kind="outlet" name="imageDisplayArea" candidateClass="UICollectionView"/>
+            </relationships>
+        </class>
+        <class className="MFPFootPrintViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MFPFootPrintViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cameraButtonPressed:"/>
+                <relationship kind="action" name="footPrintButtonPressed:"/>
+                <relationship kind="action" name="shareButtonPressed:"/>
+                <relationship kind="outlet" name="background" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="footPrintButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="MFPImageCell" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MFPImageCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="imagePreviewView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="nameTag" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="MFPLoginViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MFPLoginViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="renrenLoginButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="sinaWeiboLoginButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="MFPUploadPhotoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MFPUploadPhotoViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="displayProvinces" candidateClass="UICollectionView"/>
+            </relationships>
+        </class>
+        <class className="MFPrrLoginWebViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MFPrrLoginWebViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="indicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="loginView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="iCarousel" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iCarousel.h"/>
+            <relationships>
+                <relationship kind="outlet" name="dataSource"/>
+                <relationship kind="outlet" name="delegate"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
 </document>

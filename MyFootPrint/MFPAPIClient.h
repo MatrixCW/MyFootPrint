@@ -9,4 +9,5 @@
 #import <Foundation/Foundation.h>
 #import "AFHTTPClient.h"
 @interface MFPAPIClient : AFHTTPClient
++ (MFPAPIClient *)sharedClient;
 @end
