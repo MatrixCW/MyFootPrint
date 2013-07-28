@@ -118,9 +118,11 @@
     
     
     if(toDisplay.size.width/toDisplay.size.height < 1)
-        return CGSizeMake(200, 300);
+
+       return CGSizeMake(160, 240);
+
     else
-        return CGSizeMake(300, 200);
+        return CGSizeMake(240, 160);
 }
 
 /*

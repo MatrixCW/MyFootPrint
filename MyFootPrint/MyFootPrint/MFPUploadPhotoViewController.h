@@ -31,6 +31,6 @@
 @property NSMutableArray *queriedGeoData;
 @property NSMutableDictionary *provincesAndPhotos;
 @property (weak, nonatomic) IBOutlet UICollectionView *displayProvinces;
-@property NSInteger currentSlectedProvinces;
+@property NSInteger currentSelectedProvinces;
 
 @end

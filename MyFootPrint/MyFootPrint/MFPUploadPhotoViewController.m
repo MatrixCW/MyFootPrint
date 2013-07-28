@@ -169,7 +169,8 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"haha");
-    self.currentProcessingIndex = indexPath.row;
+    self.currentSelectedProvinces = indexPath.row;
+    NSLog(@"%i",indexPath.row);
     [self performSegueWithIdentifier:@"SEGUE_TO_SHOW_PHOTOS" sender:self];
 }
 
@@ -183,9 +184,6 @@
         }
 }
 
-- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
-    // TODO: Deselect item
-}
 
 #pragma mark – UICollectionViewDelegateFlowLayout
 
@@ -254,7 +252,7 @@
 -(NSArray*) imagesToDisplay{
     
     NSArray* keys = [self.provincesAndPhotos allKeys];
-    NSString *key = [keys objectAtIndex:self.currentSlectedProvinces];
+    NSString *key = [keys objectAtIndex:self.currentSelectedProvinces];
     
     return [NSArray arrayWithArray:[self.provincesAndPhotos objectForKey:key]];
     
