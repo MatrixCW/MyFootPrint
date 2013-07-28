@@ -10,6 +10,7 @@
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "MFPAPIClient.h"
 #import "MFPConstants.h"
+#import "dataUtil.h"
 @interface MFPDisplayImageViewController ()
 
 @property NSMutableArray *imageArray;
@@ -148,6 +149,7 @@
     
     NSMutableDictionary *mutableParameters = [NSMutableDictionary dictionary];
     [mutableParameters setObject:[NSNumber numberWithDouble:lat] forKey:@"lat"];
+    [mutableParameters setObject:[[dataUtil sharedInstance] uid] forKey:@"uid"];
     [mutableParameters setObject:[NSNumber numberWithDouble:lng] forKey:@"lng"];
     [mutableParameters setObject:[NSNumber numberWithDouble:city] forKey:@"city"];
     [mutableParameters setObject:[NSNumber numberWithDouble:province] forKey:@"province"];
@@ -166,7 +168,8 @@
     
 }
 - (IBAction)addButtonPressed:(id)sender {
-    
+    UIImage *img = [UIImage imageNamed:@"facebook500"];
+    [self uploadImageWithLat:30 lng:104 img:img province:4 andCity:4];
 
 }
 

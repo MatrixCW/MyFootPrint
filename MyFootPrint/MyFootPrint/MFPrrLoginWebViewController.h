@@ -14,5 +14,6 @@
 @property id<dismissLoginViewController> myDelegate;
 @property (weak, nonatomic) IBOutlet UIWebView *loginView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
+- (IBAction)backButtonPressed:(id)sender;
 
 @end

@@ -12,6 +12,11 @@
 [NSString stringWithFormat:@"\%@%@", \
 [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0],@"/userInfo.txt"]\
 
+
+#define PROVINCE_MAP_STORING_PATH \
+[NSString stringWithFormat:@"\%@%@", \
+[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0],@"/province.plist"]\
+
 #define UPLOAD_PHOTO_VC_BG @"upload_bg.png"
 #define FOOT_PRINT_BUTTON_SIZE 55
 #define FOOT_PRINT_BUTTON_RADIUS 70

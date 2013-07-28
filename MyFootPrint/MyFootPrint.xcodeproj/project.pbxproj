@@ -175,6 +175,7 @@
 		4B6EEC5217A47B3D00F17091 /* TRStringExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6EEC5117A47B3C00F17091 /* TRStringExtensions.m */; };
 		4B6EEC5817A4878C00F17091 /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B6EEC5717A4878C00F17091 /* icon57.png */; };
 		4B6EEC5A17A4879200F17091 /* icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B6EEC5917A4879200F17091 /* icon114.png */; };
+		4B6EEC6017A49C2F00F17091 /* MFPProvinceMapUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6EEC5F17A49C2F00F17091 /* MFPProvinceMapUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -408,6 +409,8 @@
 		4B6EEC5117A47B3C00F17091 /* TRStringExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRStringExtensions.m; sourceTree = "<group>"; };
 		4B6EEC5717A4878C00F17091 /* icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon57.png; path = ../../icon57.png; sourceTree = "<group>"; };
 		4B6EEC5917A4879200F17091 /* icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon114.png; path = ../../icon114.png; sourceTree = "<group>"; };
+		4B6EEC5E17A49C2F00F17091 /* MFPProvinceMapUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPProvinceMapUtil.h; sourceTree = "<group>"; };
+		4B6EEC5F17A49C2F00F17091 /* MFPProvinceMapUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPProvinceMapUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -453,6 +456,8 @@
 				4B37E83217A3E21A00C54C85 /* dataUtil.m */,
 				4B6EEC4D17A46AFC00F17091 /* MFPAPIClient.h */,
 				4B6EEC4E17A46AFC00F17091 /* MFPAPIClient.m */,
+				4B6EEC5E17A49C2F00F17091 /* MFPProvinceMapUtil.h */,
+				4B6EEC5F17A49C2F00F17091 /* MFPProvinceMapUtil.m */,
 				0BEA00A517A3658100061BB6 /* BDSocialLogin */,
 				0BEA007017A35FD600061BB6 /* MyFootPrint */,
 				0BEA009417A35FD600061BB6 /* MyFootPrintTests */,
@@ -1063,6 +1068,7 @@
 				4B6EEC5217A47B3D00F17091 /* TRStringExtensions.m in Sources */,
 				0BBDA6A017A460B70029FC06 /* MFPDisplayImageViewController.m in Sources */,
 				0BBDA6A317A475140029FC06 /* MFPDisplayAllImageCell.m in Sources */,
+				4B6EEC6017A49C2F00F17091 /* MFPProvinceMapUtil.m in Sources */,
 				0BBDA6AA17A492F60029FC06 /* MFPFriendListViewController.m in Sources */,
 				0BBDA6AD17A4973E0029FC06 /* MFPFriendListTableCell.m in Sources */,
 				0BBDA6B017A4A1840029FC06 /* MFPFriendFootPrintViewController.m in Sources */,
