@@ -20,6 +20,7 @@
 		0BBDA6B617A4AAE00029FC06 /* MFPSegueToRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBDA6B517A4AADF0029FC06 /* MFPSegueToRight.m */; };
 		0BBDA6BF17A4AFD10029FC06 /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBDA6BE17A4AFD10029FC06 /* UIPlaceHolderTextView.m */; };
 		0BBDA6C117A4BA970029FC06 /* placeHolder.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BBDA6C017A4BA970029FC06 /* placeHolder.png */; };
+		0BBDA6C417A4C52A0029FC06 /* MFPMyVisitedProvinces.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBDA6C317A4C52A0029FC06 /* MFPMyVisitedProvinces.m */; };
 		0BC4CA7317A3C764003A4AE5 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC4CA7217A3C764003A4AE5 /* AssetsLibrary.framework */; };
 		0BC4CA7517A440B3003A4AE5 /* pushpin.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BC4CA7417A440B3003A4AE5 /* pushpin.png */; };
 		0BC4CA7817A44126003A4AE5 /* MFPImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BC4CA7717A44126003A4AE5 /* MFPImageCell.m */; };
@@ -223,6 +224,8 @@
 		0BBDA6BD17A4AFD00029FC06 /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
 		0BBDA6BE17A4AFD10029FC06 /* UIPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPlaceHolderTextView.m; sourceTree = "<group>"; };
 		0BBDA6C017A4BA970029FC06 /* placeHolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeHolder.png; sourceTree = "<group>"; };
+		0BBDA6C217A4C52A0029FC06 /* MFPMyVisitedProvinces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MFPMyVisitedProvinces.h; path = ../MFPMyVisitedProvinces.h; sourceTree = "<group>"; };
+		0BBDA6C317A4C52A0029FC06 /* MFPMyVisitedProvinces.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MFPMyVisitedProvinces.m; path = ../MFPMyVisitedProvinces.m; sourceTree = "<group>"; };
 		0BC4CA7217A3C764003A4AE5 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		0BC4CA7417A440B3003A4AE5 /* pushpin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pushpin.png; path = ../MyFootPrint/pushpin.png; sourceTree = "<group>"; };
 		0BC4CA7617A44126003A4AE5 /* MFPImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPImageCell.h; sourceTree = "<group>"; };
@@ -535,6 +538,8 @@
 				4B0D832317A3AACC00E23681 /* ALRadial */,
 				0BEA007917A35FD600061BB6 /* MFPAppDelegate.h */,
 				0BEA007A17A35FD600061BB6 /* MFPAppDelegate.m */,
+				0BBDA6C217A4C52A0029FC06 /* MFPMyVisitedProvinces.h */,
+				0BBDA6C317A4C52A0029FC06 /* MFPMyVisitedProvinces.m */,
 				0BEA008217A35FD600061BB6 /* MainStoryboard.storyboard */,
 				0BBDA6B117A4A4E80029FC06 /* MFPEditCardViewController.h */,
 				0BBDA6B217A4A4E80029FC06 /* MFPEditCardViewController.m */,
@@ -1137,6 +1142,7 @@
 				0BBDA6B617A4AAE00029FC06 /* MFPSegueToRight.m in Sources */,
 				0BBDA6BF17A4AFD10029FC06 /* UIPlaceHolderTextView.m in Sources */,
 				4B6EEC6317A4C85000F17091 /* MFPSendCardViewController.m in Sources */,
+				0BBDA6C417A4C52A0029FC06 /* MFPMyVisitedProvinces.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

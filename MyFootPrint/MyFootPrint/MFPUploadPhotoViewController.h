@@ -18,7 +18,7 @@
 #import "MFPQueryGeolocation.h"
 #import "MFPImageCell.h"
 #import "MFPDisplayImageViewController.h"
-
+#import "MFPMyVisitedProvinces.h"
 
 
 

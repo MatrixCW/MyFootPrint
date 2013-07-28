@@ -14,6 +14,7 @@
 #import "MFPAPIClient.h"
 #define BLUE_PROVINCE @"%@blue"
 #import "TRStringExtensions.h"
+#import "MFPMyVisitedProvinces.h"
 #define CREATE_USER_URL @"http://www.friendoc.com.cn:3000/api/rrlogin.json?rrid=%@&name=%@&thumbnail=%@&token=%@"
 @interface MFPFootPrintViewController ()
 
@@ -35,6 +36,12 @@
     [super viewDidLoad];
     self.footPrintMenu = [[ALRadialMenu alloc] init];
     self.footPrintMenu.delegate = self;
+    
+    NSArray *visitedprovinces = [MFPMyVisitedProvinces returnVisitedProvinces];
+    if(visitedprovinces){
+        NSMutableArray *provinces = [NSMutableArray array];
+    }
+        
 	// Do any additional setup after loading the view.
 }
 
@@ -52,7 +59,7 @@
     NSURL *url = [NSURL URLWithString:[[NSString stringWithFormat:CREATE_USER_URL,rrid,name,thumbnail,token] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     NSLog(@"%@",url);
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:[NSURLRequest requestWithURL:url] success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
-        NSLog(@"%@",JSON);
+        NSLog(@"%@kkkkkk",JSON);
         [[dataUtil sharedInstance] setUid:[JSON objectForKey:@"id"]];
     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
         NSLog(@"Error: %@", error);
