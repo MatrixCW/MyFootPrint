@@ -17,12 +17,15 @@ static dataUtil* sharedInstance = nil;
 }
 
 - (BOOL) isLoggedIn {
-    return self.token && self.rrid;
+    return self.token && self.rrid && self.uid;
 }
 
 
 - (void) logout {
     [[CacheManager sharedManager] clearCacheForKey:TOKEN_CACHE_KEY];
+    [[CacheManager sharedManager] clearCacheForKey:NAME_CACHE_KEY];
+    [[CacheManager sharedManager] clearCacheForKey:RRID_CACHE_KEY];
+    [[CacheManager sharedManager] clearCacheForKey:THUMB_CACHE_KEY];
     [[CacheManager sharedManager] clearCacheForKey:UID_CACHE_KEY];
 }
 
